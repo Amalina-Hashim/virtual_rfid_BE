@@ -48,7 +48,7 @@ class ChargingLogic(models.Model):
     start_time = models.TimeField()
     end_time = models.TimeField()
     amount_to_charge = models.DecimalField(max_digits=10, decimal_places=2)
-    amount_rate = models.CharField(max_length=10, choices=[('second', 'Per Second'), ('minute', 'Per Minute'), ('hour', 'Per Hour')])
+    amount_rate = models.CharField(max_length=10, choices=[('second', 'Per Second'), ('minute', 'Per Minute'), ('hour', 'Per Hour'), ('day', 'Per Day'), ('week', 'Per Week'), ('month', 'Per Month')])
     days = models.ManyToManyField(Day)
     months = models.ManyToManyField(Month)
     years = models.ManyToManyField(Year)
