@@ -3,6 +3,7 @@ from rest_framework import viewsets, generics, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
+from rest_framework.decorators import api_view
 from core.models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year
 from core.serializers import UserSerializer, LocationSerializer, ChargingLogicSerializer, TransactionHistorySerializer
 
@@ -44,6 +45,23 @@ class LocationViewSet(viewsets.ModelViewSet):
     serializer_class = LocationSerializer
     permission_classes = [IsAuthenticated]
 
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        logging.info(f"Current instance location_name: {instance.location_name}")
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        logging.info(f"Updated location: {serializer.data}")
+        return Response(serializer.data)
+    
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        self.perform_destroy(instance)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def perform_destroy(self, instance):
+        instance.delete()
+
 class ChargingLogicViewSet(viewsets.ModelViewSet):
     queryset = ChargingLogic.objects.all()
     serializer_class = ChargingLogicSerializer
@@ -71,3 +89,10 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
     queryset = TransactionHistory.objects.all()
     serializer_class = TransactionHistorySerializer
     permission_classes = [IsAuthenticated]
+
+@api_view(['GET'])
+def get_charging_logics(request):
+    charging_logics = ChargingLogic.objects.all()
+    serializer = ChargingLogicSerializer(charging_logics, many=True)
+    print("Serialized data:", serializer.data) 
+    return Response(serializer.data)

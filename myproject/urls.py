@@ -15,4 +15,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api/token/', obtain_auth_token, name='api_token_auth'),
     path('api/register/', views.UserCreateView.as_view(), name='register'),
+    path('api/charging-logics/', views.get_charging_logics, name='get_charging_logics'),  
 ]
