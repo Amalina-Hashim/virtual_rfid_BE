@@ -11,7 +11,7 @@ class MonthField(serializers.SlugRelatedField):
 
 class YearField(serializers.SlugRelatedField):
     def to_internal_value(self, data):
-        return Year.objects.get_or_create(year=data)[0]
+        return Year.objects.get_or_create(year=int(data))[0]
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
@@ -25,9 +25,9 @@ class UserSerializer(serializers.ModelSerializer):
             email=validated_data['email'],
             username=validated_data['username'],
             role=validated_data.get('role', 'user'),
-            is_active=True  
+            is_active=True
         )
-        user.set_password(validated_data['password'])  
+        user.set_password(validated_data['password'])
         user.save()
         return user
 
