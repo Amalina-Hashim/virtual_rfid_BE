@@ -15,8 +15,8 @@ class User(AbstractUser):
 
 class Location(models.Model):
     country = models.CharField(max_length=100)
-    latitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
-    longitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
+    latitude = models.DecimalField(max_digits=10, decimal_places=7, null=True, blank=True)  
+    longitude = models.DecimalField(max_digits=10, decimal_places=7, null=True, blank=True) 
     address_name = models.CharField(max_length=255, null=True, blank=True)
     location_name = models.CharField(max_length=255)
     radius = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
