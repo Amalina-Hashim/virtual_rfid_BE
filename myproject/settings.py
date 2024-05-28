@@ -1,5 +1,7 @@
+import os
 from pathlib import Path
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-dw2y&q1d7!a2ci%^lb^sqca1rwng*yvu+-#k@4!i_1mk(*t9g^'
@@ -16,16 +18,15 @@ INSTALLED_APPS = [
     'core',
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders',  # Add this line
+    'corsheaders',
 ]
 
-# Add this line
 AUTH_USER_MODEL = 'core.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # Add this line
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -76,9 +77,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Singapore'
 USE_I18N = True
+USE_L10N = True
 USE_TZ = True
+
 
 STATIC_URL = 'static/'
 
@@ -93,10 +96,21 @@ REST_FRAMEWORK = {
     ),
 }
 
-# Add the following CORS settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
 
-# Alternatively, to allow requests from any origin (useful for development)
-# CORS_ALLOW_ALL_ORIGINS = True
+# Simplified logging configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}

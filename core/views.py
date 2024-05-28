@@ -3,9 +3,15 @@ from rest_framework import viewsets, generics, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
 from core.models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year
 from core.serializers import UserSerializer, LocationSerializer, ChargingLogicSerializer, TransactionHistorySerializer
+from django.db.models import Q
+from math import radians, cos, sin, sqrt, atan2
+from django.utils import timezone
+from datetime import datetime
+import pytz
+from django.http import JsonResponse
 
 logger = logging.getLogger(__name__)
 
@@ -18,27 +24,32 @@ class UserCreateView(generics.CreateAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
-        
-       
         user.refresh_from_db()
-        
         try:
-            
             token, created = Token.objects.get_or_create(user=user)
         except Exception as e:
             logger.error(f"Error creating token: {str(e)}")
-            user.delete() 
+            user.delete()
             return Response({"detail": "Error creating token"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         user_data = serializer.data
         response_data = {**user_data, 'token': token.key}
-
         return Response(response_data, status=status.HTTP_201_CREATED)
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_current_user(request):
+    try:
+        user = request.user
+        serializer = UserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 class LocationViewSet(viewsets.ModelViewSet):
     queryset = Location.objects.all()
@@ -85,6 +96,17 @@ class ChargingLogicViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save()
 
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        return Response(serializer.data)
+
+    def perform_update(self, serializer):
+        serializer.save()
+
 class TransactionHistoryViewSet(viewsets.ModelViewSet):
     queryset = TransactionHistory.objects.all()
     serializer_class = TransactionHistorySerializer
@@ -94,5 +116,77 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
 def get_charging_logics(request):
     charging_logics = ChargingLogic.objects.all()
     serializer = ChargingLogicSerializer(charging_logics, many=True)
-    print("Serialized data:", serializer.data) 
+    print("Serialized data:", serializer.data)
     return Response(serializer.data)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_balance(request):
+    try:
+        user = request.user
+        balance = user.balance
+        return Response({'balance': balance}, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371.0  # Earth radius in kilometers
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return R * c  # Distance in kilometers
+
+def is_point_in_polygon(lat, lon, polygon_points):
+    num = len(polygon_points)
+    j = num - 1
+    inside = False
+
+    for i in range(num):
+        xi, yi = polygon_points[i]
+        xj, yj = polygon_points[j]
+        if ((yi > lat) != (yj > lat)) and (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi):
+            inside = not inside
+        j = i
+
+    return inside
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def get_charging_logic_by_location(request):
+    try:
+        latitude = float(request.data.get('latitude'))
+        longitude = float(request.data.get('longitude'))
+
+        # Get the current time in the Singapore time zone
+        singapore_tz = pytz.timezone('Asia/Singapore')
+        current_time = timezone.localtime(timezone.now(), singapore_tz).time()
+
+        logger.debug(f"Received coordinates: latitude={latitude}, longitude={longitude}, current_time={current_time}")
+
+        charging_logics = ChargingLogic.objects.filter(
+            Q(start_time__lte=current_time) &
+            Q(end_time__gte=current_time)
+        )
+
+        logger.debug(f"Number of charging logics found: {charging_logics.count()}")
+
+        for logic in charging_logics:
+            location = logic.location
+            if location.latitude is not None and location.longitude is not None:
+                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
+                logger.debug(f"Calculated distance to location {location.location_name}: {distance} km, Radius: {location.radius} km")
+
+                if distance <= float(location.radius):
+                    serializer = ChargingLogicSerializer(logic)
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+            
+            if location.polygon_points:
+                if is_point_in_polygon(latitude, longitude, location.polygon_points):
+                    serializer = ChargingLogicSerializer(logic)
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response({'error': 'No charging logic found for the given location'}, status=status.HTTP_404_NOT_FOUND)
+    except Exception as e:
+        logger.error(f"Error: {str(e)}")
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)

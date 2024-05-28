@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
+    first_login = models.BooleanField(default=True)  
     ROLE_CHOICES = (
         ('admin', 'Admin'),
         ('user', 'User'),
@@ -60,7 +61,8 @@ class ChargingLogic(models.Model):
         return (
             date_time.strftime('%A') in [day.name for day in self.days.all()] and
             date_time.strftime('%B') in [month.name for month in self.months.all()] and
-            date_time.year in [year.year for year in self.years.all()]
+            date_time.year in [year.year for year in self.years.all()] and
+            self.start_time <= date_time.time() <= self.end_time
         )
 
 class TransactionHistory(models.Model):

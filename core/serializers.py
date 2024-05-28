@@ -18,7 +18,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'password', 'balance', 'role']
+        fields = ['id', 'username', 'email', 'password', 'balance', 'role', 'first_login']
 
     def create(self, validated_data):
         user = User(
@@ -41,6 +41,7 @@ class ChargingLogicSerializer(serializers.ModelSerializer):
     months = MonthField(slug_field='name', queryset=Month.objects.all(), many=True)
     years = YearField(slug_field='year', queryset=Year.objects.all(), many=True)
     location_name = serializers.SerializerMethodField()
+    location = LocationSerializer()  # Use LocationSerializer to include full location details
 
     class Meta:
         model = ChargingLogic
@@ -48,6 +49,46 @@ class ChargingLogicSerializer(serializers.ModelSerializer):
 
     def get_location_name(self, obj):
         return obj.location.location_name if obj.location else None
+
+    def create(self, validated_data):
+        location_data = validated_data.pop('location')
+        days_data = validated_data.pop('days')
+        months_data = validated_data.pop('months')
+        years_data = validated_data.pop('years')
+        
+        location = Location.objects.create(**location_data)
+        charging_logic = ChargingLogic.objects.create(location=location, **validated_data)
+
+        # Set many-to-many relationships
+        charging_logic.days.set(days_data)
+        charging_logic.months.set(months_data)
+        charging_logic.years.set(years_data)
+
+        return charging_logic
+
+    def update(self, instance, validated_data):
+        location_data = validated_data.pop('location', None)
+        days = validated_data.pop('days', None)
+        months = validated_data.pop('months', None)
+        years = validated_data.pop('years', None)
+
+        if location_data:
+            for attr, value in location_data.items():
+                setattr(instance.location, attr, value)
+            instance.location.save()
+
+        if days:
+            instance.days.set(days)
+        if months:
+            instance.months.set(months)
+        if years:
+            instance.years.set(years)
+
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        
+        instance.save()
+        return instance
 
 class TransactionHistorySerializer(serializers.ModelSerializer):
     class Meta:
