@@ -73,3 +73,8 @@ class TransactionHistory(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.amount} at {self.location.location_name} on {self.timestamp}"
+
+    def save(self, *args, **kwargs):
+        self.user.balance += self.amount
+        self.user.save()
+        super(TransactionHistory, self).save(*args, **kwargs)

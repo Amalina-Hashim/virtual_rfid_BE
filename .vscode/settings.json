@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "${workspaceFolder}/myenv/bin/python",
+    "python.analysis.extraPaths": [
+        "./myenv/lib/python3.8/site-packages"
+    ]
+}

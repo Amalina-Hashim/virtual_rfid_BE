@@ -124,9 +124,10 @@ def get_charging_logics(request):
 def get_balance(request):
     try:
         user = request.user
-        balance = user.balance
-        return Response({'balance': balance}, status=status.HTTP_200_OK)
+        logger.debug(f"User balance fetched: {user.balance}")
+        return Response({'balance': user.balance}, status=status.HTTP_200_OK)
     except Exception as e:
+        logger.error(f"Error fetching balance: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 def haversine(lat1, lon1, lat2, lon2):
@@ -190,3 +191,28 @@ def get_charging_logic_by_location(request):
     except Exception as e:
         logger.error(f"Error: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_transaction(request):
+    try:
+        user = request.user
+        location_id = request.data.get('location_id')
+        amount = request.data.get('amount')
+
+        if not location_id or not amount:
+            return Response({'error': 'Location ID and Amount are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        location = Location.objects.get(id=location_id)
+        amount = float(amount)
+
+        transaction = TransactionHistory.objects.create(user=user, location=location, amount=amount)
+        user.balance -= amount
+        user.save()
+
+        logger.debug(f"Transaction created: {transaction}, new balance: {user.balance}")
+
+        return Response({'balance': user.balance}, status=status.HTTP_201_CREATED)
+    except Exception as e:
+        logger.error(f"Error creating transaction: {str(e)}")
+        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
