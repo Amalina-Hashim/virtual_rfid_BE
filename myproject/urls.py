@@ -19,4 +19,6 @@ urlpatterns = [
     path('api/balance/', views.get_balance, name='get_balance'),
     path('api/charging-logic/location/', views.get_charging_logic_by_location, name='get_charging_logic_by_location'),
     path('api/current-user/', views.get_current_user, name='get_current_user'),
+    path('api/transactions/create/', views.create_transaction, name='create_transaction'),
+    path('api/check-and-charge/', views.check_and_charge_user, name='check_and_charge_user'),
 ]

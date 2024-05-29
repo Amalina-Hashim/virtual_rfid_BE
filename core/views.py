@@ -195,24 +195,66 @@ def get_charging_logic_by_location(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def create_transaction(request):
+    logger.debug(f"Request received with method: {request.method}, data: {request.data}")
+    if request.method != 'POST':
+        logger.debug("Invalid HTTP method used.")
+        return Response({"error": "Invalid HTTP method"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+    
+    serializer = TransactionHistorySerializer(data=request.data, context={'request': request})
+    if serializer.is_valid():
+        serializer.save()
+        logger.debug("Transaction created successfully.")
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    logger.debug(f"Serializer errors: {serializer.errors}")
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def check_and_charge_user(request):
     try:
+        latitude = float(request.data.get('latitude'))
+        longitude = float(request.data.get('longitude'))
+
+        # Get the current time in the Singapore time zone
+        singapore_tz = pytz.timezone('Asia/Singapore')
+        current_datetime = timezone.localtime(timezone.now(), singapore_tz)
+
+        logger.debug(f"Received coordinates: latitude={latitude}, longitude={longitude}, current_datetime={current_datetime}")
+
+        charging_logics = ChargingLogic.objects.filter(
+            Q(start_time__lte=current_datetime.time()) &
+            Q(end_time__gte=current_datetime.time())
+        )
+
+        logger.debug(f"Number of charging logics found: {charging_logics.count()}")
+
+        for logic in charging_logics:
+            location = logic.location
+            # Your existing logic to calculate distance, check conditions, etc.
+
+            if logic.is_applicable(current_datetime):
+                user = request.user
+                amount = logic.amount_to_charge
+                user.balance -= amount
+                user.save()
+                
+                transaction = TransactionHistory.objects.create(
+                    user=user,
+                    location=location,
+                    amount=amount,
+                    amount_rate=logic.amount_rate  # Set the amount_rate here
+                )
+                transaction_serializer = TransactionHistorySerializer(transaction)
+                location_serializer = LocationSerializer(location)  # Serialize location
+                response_data = {
+                    'transaction': transaction_serializer.data,
+                    'location': location_serializer.data,  # Include location data in the response
+                }
+                logger.debug("Transaction created and user charged successfully.")
+                return Response(response_data, status=status.HTTP_200_OK)
+
         user = request.user
-        location_id = request.data.get('location_id')
-        amount = request.data.get('amount')
-
-        if not location_id or not amount:
-            return Response({'error': 'Location ID and Amount are required'}, status=status.HTTP_400_BAD_REQUEST)
-
-        location = Location.objects.get(id=location_id)
-        amount = float(amount)
-
-        transaction = TransactionHistory.objects.create(user=user, location=location, amount=amount)
-        user.balance -= amount
-        user.save()
-
-        logger.debug(f"Transaction created: {transaction}, new balance: {user.balance}")
-
-        return Response({'balance': user.balance}, status=status.HTTP_201_CREATED)
+        return Response({'balance': user.balance}, status=status.HTTP_200_OK)
     except Exception as e:
-        logger.error(f"Error creating transaction: {str(e)}")
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        logger.error(f"Error: {str(e)}")
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)

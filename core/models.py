@@ -1,5 +1,9 @@
+import logging
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 class User(AbstractUser):
     email = models.EmailField(unique=True)
@@ -70,11 +74,26 @@ class TransactionHistory(models.Model):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now_add=True)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
+    amount_rate = models.CharField(
+        max_length=10,
+        choices=[
+            ('second', 'Per Second'),
+            ('minute', 'Per Minute'),
+            ('hour', 'Per Hour'),
+            ('day', 'Per Day'),
+            ('week', 'Per Week'),
+            ('month', 'Per Month')
+        ],
+        default='hour' 
+    )
 
     def __str__(self):
-        return f"{self.user.username} - {self.amount} at {self.location.location_name} on {self.timestamp}"
+        return f"{self.user.username} - {self.amount} at {self.location.location_name} on {self.timestamp} at rate {self.amount_rate}"
 
     def save(self, *args, **kwargs):
-        self.user.balance += self.amount
+        original_balance = self.user.balance
+        self.user.balance -= self.amount
+        logger.debug(f"Original balance: {original_balance}, amount: {self.amount}, new balance: {self.user.balance}")
         self.user.save()
         super(TransactionHistory, self).save(*args, **kwargs)
+
