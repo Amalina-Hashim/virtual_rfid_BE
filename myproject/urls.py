@@ -10,6 +10,7 @@ router.register(r'locations', views.LocationViewSet)
 router.register(r'charging-logics', views.ChargingLogicViewSet)
 router.register(r'transactions', views.TransactionHistoryViewSet)
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
@@ -21,4 +22,6 @@ urlpatterns = [
     path('api/current-user/', views.get_current_user, name='get_current_user'),
     path('api/transactions/create/', views.create_transaction, name='create_transaction'),
     path('api/check-and-charge/', views.check_and_charge_user, name='check_and_charge_user'),
+    path('api/make-payment/', views.make_payment, name='make_payment'),  
+    path('payment-history/', views.payment_history, name='payment_history'),
 ]

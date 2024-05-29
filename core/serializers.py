@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year
+from .models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year, Payment
 
 class DayField(serializers.SlugRelatedField):
     def to_internal_value(self, data):
@@ -92,6 +92,7 @@ class ChargingLogicSerializer(serializers.ModelSerializer):
 
 class TransactionHistorySerializer(serializers.ModelSerializer):
     location_id = serializers.IntegerField(write_only=True)
+    location = LocationSerializer()
 
     class Meta:
         model = TransactionHistory
@@ -104,3 +105,9 @@ class TransactionHistorySerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         transaction = TransactionHistory.objects.create(user=user, location=location, **validated_data)
         return transaction
+
+class PaymentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Payment
+        fields = '__all__'
+        read_only_fields = ['id', 'user', 'timestamp']

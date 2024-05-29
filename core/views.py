@@ -4,14 +4,17 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
-from core.models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year
-from core.serializers import UserSerializer, LocationSerializer, ChargingLogicSerializer, TransactionHistorySerializer
+from core.models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year, Payment
+from core.serializers import UserSerializer, LocationSerializer, ChargingLogicSerializer, TransactionHistorySerializer, PaymentSerializer
 from django.db.models import Q
 from math import radians, cos, sin, sqrt, atan2
 from django.utils import timezone
+from django.conf import settings
+import stripe
 from datetime import datetime
 import pytz
 from django.http import JsonResponse
+from decimal import Decimal 
 
 logger = logging.getLogger(__name__)
 
@@ -112,6 +115,10 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
     serializer_class = TransactionHistorySerializer
     permission_classes = [IsAuthenticated]
 
+    def get_queryset(self):
+        user = self.request.user
+        return TransactionHistory.objects.filter(user=user).order_by('-timestamp')
+
 @api_view(['GET'])
 def get_charging_logics(request):
     charging_logics = ChargingLogic.objects.all()
@@ -159,7 +166,6 @@ def get_charging_logic_by_location(request):
         latitude = float(request.data.get('latitude'))
         longitude = float(request.data.get('longitude'))
 
-        # Get the current time in the Singapore time zone
         singapore_tz = pytz.timezone('Asia/Singapore')
         current_time = timezone.localtime(timezone.now(), singapore_tz).time()
 
@@ -215,7 +221,6 @@ def check_and_charge_user(request):
         latitude = float(request.data.get('latitude'))
         longitude = float(request.data.get('longitude'))
 
-        # Get the current time in the Singapore time zone
         singapore_tz = pytz.timezone('Asia/Singapore')
         current_datetime = timezone.localtime(timezone.now(), singapore_tz)
 
@@ -230,7 +235,6 @@ def check_and_charge_user(request):
 
         for logic in charging_logics:
             location = logic.location
-            # Your existing logic to calculate distance, check conditions, etc.
 
             if logic.is_applicable(current_datetime):
                 user = request.user
@@ -242,13 +246,13 @@ def check_and_charge_user(request):
                     user=user,
                     location=location,
                     amount=amount,
-                    amount_rate=logic.amount_rate  # Set the amount_rate here
+                    amount_rate=logic.amount_rate  
                 )
                 transaction_serializer = TransactionHistorySerializer(transaction)
-                location_serializer = LocationSerializer(location)  # Serialize location
+                location_serializer = LocationSerializer(location)  
                 response_data = {
                     'transaction': transaction_serializer.data,
-                    'location': location_serializer.data,  # Include location data in the response
+                    'location': location_serializer.data,  
                 }
                 logger.debug("Transaction created and user charged successfully.")
                 return Response(response_data, status=status.HTTP_200_OK)
@@ -258,3 +262,47 @@ def check_and_charge_user(request):
     except Exception as e:
         logger.error(f"Error: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+stripe.api_key = settings.STRIPE_SECRET_KEY
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def make_payment(request):
+    user = request.user
+    amount = request.data.get('amount')
+    payment_method_id = request.data.get('paymentMethodId')
+
+    try:
+        payment_intent = stripe.PaymentIntent.create(
+            amount=int(float(amount) * 100), 
+            currency='usd',
+            payment_method=payment_method_id,
+            confirmation_method='manual',
+            confirm=True,
+            return_url="http://localhost:8000/"
+        )
+
+        if payment_intent['status'] == 'succeeded':
+            user.balance += Decimal(str(amount))  
+            user.save()
+            logger.debug(f"Payment succeeded. Updated balance: {user.balance}")
+
+        return Response({
+            'client_secret': payment_intent['client_secret'],
+            'status': payment_intent['status']
+        }, status=status.HTTP_200_OK)
+
+    except stripe.error.CardError as e:
+        logger.error(f"Stripe error: {str(e)}")
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    except Exception as e:
+        logger.error(f"Error making payment: {str(e)}")
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def payment_history(request):
+    user = request.user
+    payments = Payment.objects.filter(user=user).order_by('-timestamp')
+    serializer = PaymentSerializer(payments, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)

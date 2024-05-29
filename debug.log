@@ -2061,3 +2061,2306 @@ User balance fetched: -287.60
 User balance fetched: -287.60
 Not Found: /api/transaction-histories/
 Not Found: /api/transaction-histories/
+Received coordinates: latitude=1.39898, longitude=103.90642, current_datetime=2024-05-29 23:02:08.492331+08:00
+Number of charging logics found: 1
+Original balance: -287.70, amount: 0.10, new balance: -287.80
+Received coordinates: latitude=1.39898, longitude=103.90642, current_datetime=2024-05-29 23:02:08.628385+08:00
+Number of charging logics found: 1
+Original balance: -287.90, amount: 0.10, new balance: -288.00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39898, longitude=103.90642, current_datetime=2024-05-29 23:02:10.455912+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39898, longitude=103.90642, current_datetime=2024-05-29 23:02:10.466829+08:00
+Original balance: -288.10, amount: 0.10, new balance: -288.20
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -288.10, amount: 0.10, new balance: -288.20
+Transaction created and user charged successfully.
+User balance fetched: -288.20
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:03:33.660551+08:00
+Number of charging logics found: 1
+Original balance: -288.30, amount: 0.10, new balance: -288.40
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:03:33.754164+08:00
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:03:33.755159+08:00
+User balance fetched: -288.30
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:03:33.788848+08:00
+Number of charging logics found: 1
+Original balance: -288.40, amount: 0.10, new balance: -288.50
+Transaction created and user charged successfully.
+Original balance: -288.40, amount: 0.10, new balance: -288.50
+Transaction created and user charged successfully.
+Original balance: -288.50, amount: 0.10, new balance: -288.60
+Transaction created and user charged successfully.
+User balance fetched: -288.60
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:04:03.997106+08:00
+Number of charging logics found: 1
+Original balance: -288.70, amount: 0.10, new balance: -288.80
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:04:04.014420+08:00
+User balance fetched: -288.70
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+User balance fetched: -288.80
+Original balance: -288.80, amount: 0.10, new balance: -288.90
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:04:05.964275+08:00
+Received coordinates: latitude=1.398991, longitude=103.906427, current_datetime=2024-05-29 23:04:05.967137+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -289.00, amount: 0.10, new balance: -289.10
+Original balance: -289.00, amount: 0.10, new balance: -289.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:50.100139+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:50.124834+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -289.20, amount: 0.10, new balance: -289.30
+Transaction created and user charged successfully.
+Original balance: -289.20, amount: 0.10, new balance: -289.30
+Transaction created and user charged successfully.
+User balance fetched: -289.30
+User balance fetched: -289.30
+User balance fetched: -289.30
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:59.105428+08:00
+Number of charging logics found: 1
+Original balance: -289.40, amount: 0.10, new balance: -289.50
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:59.131243+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -289.50, amount: 0.10, new balance: -289.60
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:59.324728+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:05:59.334324+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -289.70, amount: 0.10, new balance: -289.80
+Transaction created and user charged successfully.
+Original balance: -289.70, amount: 0.10, new balance: -289.80
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:06:01.122986+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:06:01.128243+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -289.90, amount: 0.10, new balance: -290.00
+Original balance: -289.90, amount: 0.10, new balance: -290.00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -290.00
+User balance fetched: -290.00
+User balance fetched: -290.00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:16.641867+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:16.677191+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:16.679450+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:16.853421+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -290.10, amount: 0.10, new balance: -290.20
+User balance fetched: -290.10
+Number of charging logics found: 1
+User balance fetched: -290.20
+Original balance: -290.10, amount: 0.10, new balance: -290.20
+Original balance: -290.10, amount: 0.10, new balance: -290.20
+Transaction created and user charged successfully.
+Original balance: -290.10, amount: 0.10, new balance: -290.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:18.579652+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:18.585768+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:18.586965+08:00
+Received coordinates: latitude=1.398991, longitude=103.90643, current_datetime=2024-05-29 23:07:18.593454+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -290.30, amount: 0.10, new balance: -290.40
+Transaction created and user charged successfully.
+Original balance: -290.30, amount: 0.10, new balance: -290.40
+Transaction created and user charged successfully.
+Original balance: -290.30, amount: 0.10, new balance: -290.40
+Transaction created and user charged successfully.
+Original balance: -290.30, amount: 0.10, new balance: -290.40
+Transaction created and user charged successfully.
+User balance fetched: -290.40
+User balance fetched: -290.40
+User balance fetched: -290.40
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:52.485040+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:52.509701+08:00
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:52.519377+08:00
+Original balance: -290.50, amount: 0.10, new balance: -290.60
+Number of charging logics found: 1
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:52.526342+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -290.50, amount: 0.10, new balance: -290.60
+Transaction created and user charged successfully.
+Original balance: -290.50, amount: 0.10, new balance: -290.60
+Original balance: -290.60, amount: 0.10, new balance: -290.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:54.490054+08:00
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-29 23:07:54.494042+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -290.80, amount: 0.10, new balance: -290.90
+Transaction created and user charged successfully.
+Original balance: -290.80, amount: 0.10, new balance: -290.90
+Transaction created and user charged successfully.
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+User balance fetched: -290.90
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:11:25.387346+08:00
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:11:25.417653+08:00
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:11:25.423393+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -291.00, amount: 0.10, new balance: -291.10
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:11:25.488025+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -291.00, amount: 0.10, new balance: -291.10
+Original balance: -291.10, amount: 0.10, new balance: -291.20
+Original balance: -291.00, amount: 0.10, new balance: -291.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -291.10
+User balance fetched: -291.10
+User balance fetched: -291.10
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:17.549380+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:17.571614+08:00
+Original balance: -291.20, amount: 0.10, new balance: -291.30
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:17.588159+08:00
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:17.589220+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -291.20, amount: 0.10, new balance: -291.30
+Original balance: -291.30, amount: 0.10, new balance: -291.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -291.30, amount: 0.10, new balance: -291.40
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:19.596444+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:12:19.613771+08:00
+Number of charging logics found: 1
+Original balance: -291.50, amount: 0.10, new balance: -291.60
+Transaction created and user charged successfully.
+Original balance: -291.50, amount: 0.10, new balance: -291.60
+Transaction created and user charged successfully.
+User balance fetched: -291.60
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:13:16.525132+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:13:16.567980+08:00
+Number of charging logics found: 1
+Original balance: -291.70, amount: 0.10, new balance: -291.80
+Transaction created and user charged successfully.
+Original balance: -291.70, amount: 0.10, new balance: -291.80
+Transaction created and user charged successfully.
+User balance fetched: -291.80
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:13:18.522770+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:13:18.536445+08:00
+Received coordinates: latitude=1.39901, longitude=103.906434, current_datetime=2024-05-29 23:13:18.542181+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -291.90, amount: 0.10, new balance: -292.00
+Original balance: -291.90, amount: 0.10, new balance: -292.00
+Transaction created and user charged successfully.
+Original balance: -291.90, amount: 0.10, new balance: -292.00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:51.462473+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:51.469525+08:00
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:51.471959+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -292.10, amount: 0.10, new balance: -292.20
+Transaction created and user charged successfully.
+Original balance: -292.10, amount: 0.10, new balance: -292.20
+Transaction created and user charged successfully.
+Original balance: -292.10, amount: 0.10, new balance: -292.20
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:53.457700+08:00
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:53.459518+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:13:53.465023+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -292.30, amount: 0.10, new balance: -292.40
+Original balance: -292.30, amount: 0.10, new balance: -292.40
+Original balance: -292.30, amount: 0.10, new balance: -292.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -292.40
+User balance fetched: -292.40
+User balance fetched: -292.40
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:05.980767+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:05.986323+08:00
+Original balance: -292.50, amount: 0.10, new balance: -292.60
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -292.50, amount: 0.10, new balance: -292.60
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:06.138555+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:06.163694+08:00
+Number of charging logics found: 1
+Original balance: -292.70, amount: 0.10, new balance: -292.80
+Transaction created and user charged successfully.
+Original balance: -292.70, amount: 0.10, new balance: -292.80
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:07.987193+08:00
+Received coordinates: latitude=1.398989, longitude=103.906442, current_datetime=2024-05-29 23:14:07.993388+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -292.90, amount: 0.10, new balance: -293.00
+Transaction created and user charged successfully.
+Original balance: -292.90, amount: 0.10, new balance: -293.00
+Transaction created and user charged successfully.
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+User balance fetched: -293.00
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:06.229345+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:06.254347+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:06.258106+08:00
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:06.259273+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -293.10, amount: 0.10, new balance: -293.20
+Original balance: -293.10, amount: 0.10, new balance: -293.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -293.10, amount: 0.10, new balance: -293.20
+Original balance: -293.10, amount: 0.10, new balance: -293.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -293.20
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:33.783342+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:33.845469+08:00
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:33.875128+08:00
+Number of charging logics found: 1
+Original balance: -293.30, amount: 0.10, new balance: -293.40
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:33.911010+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -293.40, amount: 0.10, new balance: -293.50
+Original balance: -293.40, amount: 0.10, new balance: -293.50
+Transaction created and user charged successfully.
+Original balance: -293.30, amount: 0.10, new balance: -293.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:35.713799+08:00
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:35.731476+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:35.737420+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906438, current_datetime=2024-05-29 23:18:35.744949+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -293.60, amount: 0.10, new balance: -293.70
+Transaction created and user charged successfully.
+Original balance: -293.60, amount: 0.10, new balance: -293.70
+Original balance: -293.60, amount: 0.10, new balance: -293.70
+Transaction created and user charged successfully.
+Original balance: -293.60, amount: 0.10, new balance: -293.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+User balance fetched: -293.70
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.712533+08:00
+User balance fetched: -293.70
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.738237+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.748579+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.756542+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -293.80, amount: 0.10, new balance: -293.90
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+User balance fetched: -293.90
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.808601+08:00
+Number of charging logics found: 1
+Original balance: -294.00, amount: 0.10, new balance: -294.10
+Original balance: -293.80, amount: 0.10, new balance: -293.90
+Transaction created and user charged successfully.
+Original balance: -293.80, amount: 0.10, new balance: -293.90
+Original balance: -293.80, amount: 0.10, new balance: -293.90
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:23:34.899302+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -293.90, amount: 0.10, new balance: -294.00
+Transaction created and user charged successfully.
+User balance fetched: -294.00
+User balance fetched: -294.00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.705034+08:00
+Number of charging logics found: 1
+Original balance: -294.10, amount: 0.10, new balance: -294.20
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.746731+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.766472+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.768661+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -294.30, amount: 0.10, new balance: -294.40
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.800825+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -294.30, amount: 0.10, new balance: -294.40
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.849834+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:16.877253+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:17.091957+08:00
+Original balance: -294.30, amount: 0.10, new balance: -294.40
+Original balance: -294.30, amount: 0.10, new balance: -294.40
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -294.40, amount: 0.10, new balance: -294.50
+Transaction created and user charged successfully.
+Original balance: -294.50, amount: 0.10, new balance: -294.60
+Original balance: -294.50, amount: 0.10, new balance: -294.60
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.665944+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.669210+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.671930+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.676591+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.678048+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.691504+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Transaction created and user charged successfully.
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Transaction created and user charged successfully.
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.892207+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:18.895333+08:00
+Number of charging logics found: 1
+Original balance: -294.70, amount: 0.10, new balance: -294.80
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -294.80, amount: 0.10, new balance: -294.90
+Original balance: -294.80, amount: 0.10, new balance: -294.90
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -294.90
+User balance fetched: -294.90
+User balance fetched: -294.90
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:49.279730+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:49.289598+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -295.00, amount: 0.10, new balance: -295.10
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:49.338038+08:00
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:49.341646+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -295.00, amount: 0.10, new balance: -295.10
+Original balance: -295.20, amount: 0.10, new balance: -295.30
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -295.20, amount: 0.10, new balance: -295.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:51.286252+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39891, longitude=103.90641, current_datetime=2024-05-29 23:24:51.299784+08:00
+Number of charging logics found: 1
+Original balance: -295.40, amount: 0.10, new balance: -295.50
+Transaction created and user charged successfully.
+Original balance: -295.40, amount: 0.10, new balance: -295.50
+Transaction created and user charged successfully.
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+User balance fetched: -295.50
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:49.830253+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:49.855083+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:49.882876+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:49.896000+08:00
+Number of charging logics found: 1
+Original balance: -295.60, amount: 0.10, new balance: -295.70
+Original balance: -295.70, amount: 0.10, new balance: -295.80
+Transaction created and user charged successfully.
+Original balance: -295.70, amount: 0.10, new balance: -295.80
+Original balance: -295.60, amount: 0.10, new balance: -295.70
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:49.988180+08:00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+User balance fetched: -295.80
+Original balance: -295.70, amount: 0.10, new balance: -295.80
+User balance fetched: -295.80
+Transaction created and user charged successfully.
+User balance fetched: -295.80
+User balance fetched: -295.80
+User balance fetched: -295.80
+User balance fetched: -295.80
+User balance fetched: -295.80
+User balance fetched: -295.80
+User balance fetched: -295.80
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:55.377912+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:55.392815+08:00
+Original balance: -295.90, amount: 0.10, new balance: -296.00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:55.416153+08:00
+Number of charging logics found: 1
+Original balance: -296.10, amount: 0.10, new balance: -296.20
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:55.445739+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -295.90, amount: 0.10, new balance: -296.00
+Transaction created and user charged successfully.
+Original balance: -296.30, amount: 0.10, new balance: -296.40
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:57.389216+08:00
+Received coordinates: latitude=1.39897, longitude=103.90643, current_datetime=2024-05-29 23:25:57.391266+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -296.50, amount: 0.10, new balance: -296.60
+Transaction created and user charged successfully.
+Original balance: -296.50, amount: 0.10, new balance: -296.60
+Transaction created and user charged successfully.
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+User balance fetched: -296.60
+User balance fetched: -296.60
+User balance fetched: -296.60
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:16.928303+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:16.954203+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:16.963720+08:00
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:16.970685+08:00
+Original balance: -296.70, amount: 0.10, new balance: -296.80
+Number of charging logics found: 1
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -296.70, amount: 0.10, new balance: -296.80
+Transaction created and user charged successfully.
+Original balance: -296.70, amount: 0.10, new balance: -296.80
+Transaction created and user charged successfully.
+Original balance: -296.70, amount: 0.10, new balance: -296.80
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:18.932815+08:00
+Received coordinates: latitude=1.398853, longitude=103.906363, current_datetime=2024-05-29 23:30:18.935353+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -296.90, amount: 0.10, new balance: -297.00
+Original balance: -296.90, amount: 0.10, new balance: -297.00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -297.00
+User balance fetched: -297.00
+User balance fetched: -297.00
+User balance fetched: -297.00
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:04.402753+08:00
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:04.414763+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+User balance fetched: -297.00
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:04.467989+08:00
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:04.476428+08:00
+Original balance: -297.10, amount: 0.10, new balance: -297.20
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+User balance fetched: -297.20
+Number of charging logics found: 1
+Original balance: -297.10, amount: 0.10, new balance: -297.20
+Original balance: -297.10, amount: 0.10, new balance: -297.20
+Transaction created and user charged successfully.
+Original balance: -297.10, amount: 0.10, new balance: -297.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -297.20
+User balance fetched: -297.20
+User balance fetched: -297.20
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:49.173200+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:49.189878+08:00
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:49.193838+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -297.30, amount: 0.10, new balance: -297.40
+Original balance: -297.30, amount: 0.10, new balance: -297.40
+Transaction created and user charged successfully.
+Original balance: -297.30, amount: 0.10, new balance: -297.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:49.442393+08:00
+Number of charging logics found: 1
+Original balance: -297.50, amount: 0.10, new balance: -297.60
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:51.171192+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39893, longitude=103.906419, current_datetime=2024-05-29 23:32:51.181875+08:00
+Number of charging logics found: 1
+Original balance: -297.70, amount: 0.10, new balance: -297.80
+Transaction created and user charged successfully.
+Original balance: -297.70, amount: 0.10, new balance: -297.80
+Transaction created and user charged successfully.
+User balance fetched: -297.80
+User balance fetched: -297.80
+Received coordinates: latitude=1.399013, longitude=103.906437, current_datetime=2024-05-29 23:34:04.282031+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399013, longitude=103.906437, current_datetime=2024-05-29 23:34:04.283641+08:00
+Number of charging logics found: 1
+Original balance: -297.90, amount: 0.10, new balance: -298.00
+Original balance: -297.90, amount: 0.10, new balance: -298.00
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -298.00
+Received coordinates: latitude=1.39894, longitude=103.906403, current_datetime=2024-05-29 23:37:44.855006+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39894, longitude=103.906403, current_datetime=2024-05-29 23:37:44.873487+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.39894, longitude=103.906403, current_datetime=2024-05-29 23:37:44.884783+08:00
+Received coordinates: latitude=1.39894, longitude=103.906403, current_datetime=2024-05-29 23:37:44.885956+08:00
+Number of charging logics found: 1
+User balance fetched: -298.00
+Number of charging logics found: 1
+Original balance: -298.10, amount: 0.10, new balance: -298.20
+Original balance: -298.10, amount: 0.10, new balance: -298.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -298.10, amount: 0.10, new balance: -298.20
+User balance fetched: -298.10
+Original balance: -298.10, amount: 0.10, new balance: -298.20
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -298.20
+User balance fetched: -298.20
+User balance fetched: -298.20
+User balance fetched: -298.20
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.214843+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.217074+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.240207+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.271463+08:00
+Number of charging logics found: 1
+User balance fetched: -298.20
+Original balance: -298.30, amount: 0.10, new balance: -298.40
+Original balance: -298.30, amount: 0.10, new balance: -298.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -298.30, amount: 0.10, new balance: -298.40
+Transaction created and user charged successfully.
+Original balance: -298.30, amount: 0.10, new balance: -298.40
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.855264+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:41:02.857881+08:00
+User balance fetched: -298.40
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -298.50, amount: 0.10, new balance: -298.60
+Transaction created and user charged successfully.
+Original balance: -298.50, amount: 0.10, new balance: -298.60
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.479739+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.483431+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.492073+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.500997+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.513882+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:16.710995+08:00
+Original balance: -298.70, amount: 0.10, new balance: -298.80
+Original balance: -298.70, amount: 0.10, new balance: -298.80
+Number of charging logics found: 1
+Original balance: -298.70, amount: 0.10, new balance: -298.80
+Original balance: -298.70, amount: 0.10, new balance: -298.80
+Original balance: -298.70, amount: 0.10, new balance: -298.80
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -298.80, amount: 0.10, new balance: -298.90
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.354265+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.358894+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.359808+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.364416+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.367009+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:18.370217+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Original balance: -299.00, amount: 0.10, new balance: -299.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -299.10
+User balance fetched: -299.10
+User balance fetched: -299.10
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:34.628627+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:34.643312+08:00
+Original balance: -299.20, amount: 0.10, new balance: -299.30
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -299.20, amount: 0.10, new balance: -299.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:34.702089+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:34.704374+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -299.40, amount: 0.10, new balance: -299.50
+Transaction created and user charged successfully.
+Original balance: -299.40, amount: 0.10, new balance: -299.50
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:36.628125+08:00
+Received coordinates: latitude=1.398928, longitude=103.90639, current_datetime=2024-05-29 23:42:36.631120+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -299.60, amount: 0.10, new balance: -299.70
+Original balance: -299.60, amount: 0.10, new balance: -299.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -299.70
+User balance fetched: -299.70
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:43:02.257078+08:00
+Number of charging logics found: 1
+Original balance: -299.80, amount: 0.10, new balance: -299.90
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:43:02.275684+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -300.00, amount: 0.10, new balance: -300.10
+Transaction created and user charged successfully.
+User balance fetched: -300.10
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:43:02.349383+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:43:02.352533+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -300.20, amount: 0.10, new balance: -300.30
+Transaction created and user charged successfully.
+Original balance: -300.20, amount: 0.10, new balance: -300.30
+Transaction created and user charged successfully.
+User balance fetched: -300.30
+User balance fetched: -300.30
+User balance fetched: -300.30
+User balance fetched: -300.30
+User balance fetched: -300.30
+User balance fetched: -300.30
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.290435+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.304646+08:00
+Number of charging logics found: 1
+User balance fetched: -300.30
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.370313+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.371339+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.418600+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:34.435651+08:00
+Number of charging logics found: 1
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+Number of charging logics found: 1
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+Transaction created and user charged successfully.
+Original balance: -300.40, amount: 0.10, new balance: -300.50
+User balance fetched: -300.40
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.217137+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.223697+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.230202+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.233412+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.242650+08:00
+Received coordinates: latitude=1.398924, longitude=103.906397, current_datetime=2024-05-29 23:44:36.244984+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Transaction created and user charged successfully.
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Original balance: -300.60, amount: 0.10, new balance: -300.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.336177+08:00
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.359744+08:00
+Number of charging logics found: 1
+User balance fetched: -300.70
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.365394+08:00
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.367069+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.374280+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.401104+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.490161+08:00
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Transaction created and user charged successfully.
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Transaction created and user charged successfully.
+User balance fetched: -300.90
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Received coordinates: latitude=1.399, longitude=103.906438, current_datetime=2024-05-29 23:46:02.632561+08:00
+User balance fetched: -300.90
+Transaction created and user charged successfully.
+Number of charging logics found: 1
+Original balance: -300.80, amount: 0.10, new balance: -300.90
+Transaction created and user charged successfully.
+Original balance: -300.90, amount: 0.10, new balance: -301.00
+Transaction created and user charged successfully.
+User balance fetched: -301.00
+Original balance: -301.00, amount: 0.10, new balance: -301.10
+Transaction created and user charged successfully.
+User balance fetched: -301.10
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.693154+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.733641+08:00
+User balance fetched: -301.10
+Number of charging logics found: 1
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.747147+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.751681+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.755326+08:00
+Number of charging logics found: 1
+Original balance: -301.20, amount: 0.10, new balance: -301.30
+Number of charging logics found: 1
+Original balance: -301.20, amount: 0.10, new balance: -301.30
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Original balance: -301.20, amount: 0.10, new balance: -301.30
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:54.846598+08:00
+Original balance: -301.20, amount: 0.10, new balance: -301.30
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:55.133402+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:55.146361+08:00
+Original balance: -301.20, amount: 0.10, new balance: -301.30
+Number of charging logics found: 1
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:55.164043+08:00
+Original balance: -301.30, amount: 0.10, new balance: -301.40
+Number of charging logics found: 1
+Number of charging logics found: 1
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:48:55.239265+08:00
+Number of charging logics found: 1
+User balance fetched: -301.40
+Original balance: -301.40, amount: 0.10, new balance: -301.50
+Original balance: -301.40, amount: 0.10, new balance: -301.50
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -301.40, amount: 0.10, new balance: -301.50
+Original balance: -301.50, amount: 0.10, new balance: -301.60
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -301.60
+User balance fetched: -301.60
+User balance fetched: -301.60
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:30.867559+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:30.876467+08:00
+Number of charging logics found: 1
+Original balance: -301.70, amount: 0.10, new balance: -301.80
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:30.912765+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:30.913655+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -301.70, amount: 0.10, new balance: -301.80
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Original balance: -301.80, amount: 0.10, new balance: -301.90
+Original balance: -301.80, amount: 0.10, new balance: -301.90
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:32.876737+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:49:32.879761+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -302.00, amount: 0.10, new balance: -302.10
+Original balance: -302.00, amount: 0.10, new balance: -302.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -302.10
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:50:03.851433+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:50:03.952703+08:00
+Number of charging logics found: 1
+Original balance: -302.20, amount: 0.10, new balance: -302.30
+Transaction created and user charged successfully.
+Original balance: -302.20, amount: 0.10, new balance: -302.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:50:05.816754+08:00
+Received coordinates: latitude=1.399002, longitude=103.906427, current_datetime=2024-05-29 23:50:05.819618+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -302.40, amount: 0.10, new balance: -302.50
+Original balance: -302.40, amount: 0.10, new balance: -302.50
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -302.50
+Received coordinates: latitude=1.399005, longitude=103.906431, current_datetime=2024-05-29 23:50:54.633729+08:00
+Received coordinates: latitude=1.399005, longitude=103.906431, current_datetime=2024-05-29 23:50:54.642054+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -302.60, amount: 0.10, new balance: -302.70
+Original balance: -302.60, amount: 0.10, new balance: -302.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+User balance fetched: -302.70
+User balance fetched: -302.70
+User balance fetched: -302.70
+User balance fetched: -302.70
+Received coordinates: latitude=1.399005, longitude=103.906431, current_datetime=2024-05-29 23:52:54.028508+08:00
+Received coordinates: latitude=1.399005, longitude=103.906431, current_datetime=2024-05-29 23:52:54.412981+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -302.80, amount: 0.10, new balance: -302.90
+Transaction created and user charged successfully.
+Original balance: -302.80, amount: 0.10, new balance: -302.90
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:52:59.134967+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:52:59.140058+08:00
+Number of charging logics found: 1
+Original balance: -303.00, amount: 0.10, new balance: -303.10
+Original balance: -303.00, amount: 0.10, new balance: -303.10
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:53:18.437743+08:00
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:53:18.440468+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Original balance: -303.20, amount: 0.10, new balance: -303.30
+Transaction created and user charged successfully.
+Original balance: -303.20, amount: 0.10, new balance: -303.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:53:20.125794+08:00
+Number of charging logics found: 1
+Received coordinates: latitude=1.398999, longitude=103.906429, current_datetime=2024-05-29 23:53:20.128627+08:00
+Number of charging logics found: 1
+Original balance: -303.40, amount: 0.10, new balance: -303.50
+Transaction created and user charged successfully.
+Original balance: -303.40, amount: 0.10, new balance: -303.50
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398971, longitude=103.90643, current_datetime=2024-05-29 23:56:58.033865+08:00
+Received coordinates: latitude=1.398971, longitude=103.90643, current_datetime=2024-05-29 23:56:58.106448+08:00
+Received coordinates: latitude=1.398971, longitude=103.90643, current_datetime=2024-05-29 23:56:58.107108+08:00
+Number of charging logics found: 1
+Number of charging logics found: 1
+Received coordinates: latitude=1.398971, longitude=103.90643, current_datetime=2024-05-29 23:56:58.117147+08:00
+Number of charging logics found: 1
+User balance fetched: -303.50
+Number of charging logics found: 1
+Original balance: -303.60, amount: 0.10, new balance: -303.70
+User balance fetched: -303.70
+Original balance: -303.60, amount: 0.10, new balance: -303.70
+Transaction created and user charged successfully.
+Original balance: -303.60, amount: 0.10, new balance: -303.70
+Original balance: -303.60, amount: 0.10, new balance: -303.70
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.650525+08:00
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.654000+08:00
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.655527+08:00
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.664408+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.675287+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399004, longitude=103.906441, current_datetime=2024-05-29 23:59:25.727221+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.376668+08:00
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.379827+08:00
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.388525+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.405703+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.396173+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.399341+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.514953+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906434, current_datetime=2024-05-30 00:47:01.523191+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+User balance fetched: -303.70
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.541718+08:00
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.566909+08:00
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.577000+08:00
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.579325+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.586274+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.592968+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.644453+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.652015+08:00
+User balance fetched: -303.70
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.658132+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906432, current_datetime=2024-05-30 00:52:00.659257+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.175493+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.178475+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.179777+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.190141+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.172703+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.246596+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.274615+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.278655+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.300819+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.321064+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.326900+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:09.335074+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:46.872585+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:46.972862+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:46.975561+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:46.977770+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.020803+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.077135+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.102346+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.119007+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.138655+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.172154+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.184455+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:47.405309+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.736535+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.758254+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.764005+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.786912+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.791484+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.798109+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.809568+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.833562+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.861355+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.863737+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.866326+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:12:48.899664+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.134092+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.136374+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.141501+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.142540+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.158851+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.197256+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.280931+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.309475+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.319938+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.327815+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.370681+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:29.403492+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:30.968589+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:30.987995+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:30.993620+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:30.997175+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:30.998408+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.002156+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.017551+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.059115+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.061891+08:00
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.066555+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.070025+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906431, current_datetime=2024-05-30 01:13:31.072063+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:26.153130+08:00
+User balance fetched: -303.70
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:26.165098+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:26.167377+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:26.183504+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:28.149984+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399015, longitude=103.906431, current_datetime=2024-05-30 01:14:28.167874+08:00
+Number of charging logics found: 0
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Received coordinates: latitude=1.399015, longitude=103.906439, current_datetime=2024-05-30 01:20:22.717544+08:00
+Received coordinates: latitude=1.399015, longitude=103.906439, current_datetime=2024-05-30 01:20:22.718703+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399015, longitude=103.906439, current_datetime=2024-05-30 01:20:23.056678+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399015, longitude=103.906439, current_datetime=2024-05-30 01:20:23.094008+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:23:21.856642+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:23:21.878772+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:23:22.050164+08:00
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:23:22.055239+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:09.027627+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:09.045647+08:00
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:09.049595+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:09.058692+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:11.037562+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399021, longitude=103.906433, current_datetime=2024-05-30 01:24:11.041450+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:26:29.920420+08:00
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:26:29.926134+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:10.730622+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:10.760484+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:10.882093+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:10.895699+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.332630+08:00
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:11.338569+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.357030+08:00
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.370041+08:00
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.392506+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.408404+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906438, current_datetime=2024-05-30 01:27:11.417992+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398908, longitude=103.90643, current_datetime=2024-05-30 01:27:11.444466+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906443, current_datetime=2024-05-30 01:27:11.603953+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39891, longitude=103.906443, current_datetime=2024-05-30 01:27:11.627618+08:00
+Received coordinates: latitude=1.398911, longitude=103.906444, current_datetime=2024-05-30 01:27:11.628714+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906444, current_datetime=2024-05-30 01:27:11.639530+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.719854+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906444, current_datetime=2024-05-30 01:27:11.727588+08:00
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.728516+08:00
+Received coordinates: latitude=1.398911, longitude=103.906444, current_datetime=2024-05-30 01:27:11.730552+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.796798+08:00
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.800335+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.810680+08:00
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.812196+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.880245+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.918167+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.925100+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:11.952458+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:12.036520+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:12.039744+08:00
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:12.043651+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398911, longitude=103.906445, current_datetime=2024-05-30 01:27:12.050417+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.569548+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.731292+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.840298+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.857983+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.898276+08:00
+Received coordinates: latitude=1.398907, longitude=103.906447, current_datetime=2024-05-30 01:28:08.902364+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:28:18.995761+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:28:19.065839+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:28:20.843656+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398975, longitude=103.906409, current_datetime=2024-05-30 01:28:20.880390+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:28:31.275041+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:28:31.348697+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398917, longitude=103.906428, current_datetime=2024-05-30 01:28:41.004510+08:00
+Received coordinates: latitude=1.398917, longitude=103.906428, current_datetime=2024-05-30 01:28:41.019855+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398917, longitude=103.906428, current_datetime=2024-05-30 01:28:41.089460+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398917, longitude=103.906428, current_datetime=2024-05-30 01:28:41.113965+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.679773+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.707374+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.828859+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.849566+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.870302+08:00
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:41.879462+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.177755+08:00
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.184100+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.192324+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.200990+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.210796+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.225896+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.248557+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.253931+08:00
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.257183+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398926, longitude=103.906432, current_datetime=2024-05-30 01:28:42.266325+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:21.582970+08:00
+User balance fetched: -303.70
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:21.621462+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:21.634130+08:00
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:21.637237+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:23.557351+08:00
+Received coordinates: latitude=1.399011, longitude=103.906438, current_datetime=2024-05-30 01:30:23.558858+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399017, longitude=103.906436, current_datetime=2024-05-30 01:30:33.251333+08:00
+Received coordinates: latitude=1.399017, longitude=103.906436, current_datetime=2024-05-30 01:30:33.254092+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399006, longitude=103.906433, current_datetime=2024-05-30 01:32:36.801182+08:00
+Received coordinates: latitude=1.399006, longitude=103.906433, current_datetime=2024-05-30 01:32:36.804724+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Unauthorized: /api/balance/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/check-and-charge/
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/transaction-histories/
+Not Found: /api/transaction-histories/
+Received coordinates: latitude=1.398951, longitude=103.90641, current_datetime=2024-05-30 01:36:43.509241+08:00
+Received coordinates: latitude=1.398951, longitude=103.90641, current_datetime=2024-05-30 01:36:43.511426+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399002, longitude=103.906432, current_datetime=2024-05-30 01:38:47.067938+08:00
+Received coordinates: latitude=1.399002, longitude=103.906432, current_datetime=2024-05-30 01:38:47.070821+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.39901, longitude=103.906438, current_datetime=2024-05-30 01:40:50.410558+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39901, longitude=103.906438, current_datetime=2024-05-30 01:40:50.439777+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399016, longitude=103.906432, current_datetime=2024-05-30 01:42:53.773691+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399016, longitude=103.906432, current_datetime=2024-05-30 01:42:53.805120+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39892, longitude=103.906406, current_datetime=2024-05-30 01:44:57.236587+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39892, longitude=103.906406, current_datetime=2024-05-30 01:44:57.571760+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906437, current_datetime=2024-05-30 01:47:00.743940+08:00
+Received coordinates: latitude=1.398996, longitude=103.906437, current_datetime=2024-05-30 01:47:00.746128+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399001, longitude=103.906435, current_datetime=2024-05-30 01:49:04.256285+08:00
+Received coordinates: latitude=1.399001, longitude=103.906435, current_datetime=2024-05-30 01:49:04.258757+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-30 01:51:07.593592+08:00
+Received coordinates: latitude=1.399, longitude=103.906435, current_datetime=2024-05-30 01:51:07.618036+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.39892, longitude=103.906397, current_datetime=2024-05-30 01:53:11.386460+08:00
+Received coordinates: latitude=1.39892, longitude=103.906397, current_datetime=2024-05-30 01:53:11.388263+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+Received coordinates: latitude=1.399006, longitude=103.906427, current_datetime=2024-05-30 01:59:38.012226+08:00
+Received coordinates: latitude=1.399006, longitude=103.906427, current_datetime=2024-05-30 01:59:38.016640+08:00
+Received coordinates: latitude=1.399006, longitude=103.906427, current_datetime=2024-05-30 01:59:38.018474+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:04:50.435281+08:00
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:04:50.454323+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:04:50.484932+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:06.511022+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:06.566582+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:06.621799+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:08.460606+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:08.498101+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:05:08.507476+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:31.091258+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:31.249315+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:31.883448+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:33.019059+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:33.051369+08:00
+User balance fetched: -303.70
+Received coordinates: latitude=1.39895, longitude=103.906404, current_datetime=2024-05-30 02:06:33.056572+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399013, longitude=103.906442, current_datetime=2024-05-30 02:06:50.369855+08:00
+Received coordinates: latitude=1.399013, longitude=103.906442, current_datetime=2024-05-30 02:06:50.371596+08:00
+Received coordinates: latitude=1.399013, longitude=103.906442, current_datetime=2024-05-30 02:06:50.373940+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399, longitude=103.906439, current_datetime=2024-05-30 02:08:53.731206+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399, longitude=103.906439, current_datetime=2024-05-30 02:08:53.782157+08:00
+Received coordinates: latitude=1.399, longitude=103.906439, current_datetime=2024-05-30 02:08:53.790810+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398922, longitude=103.906479, current_datetime=2024-05-30 02:10:07.345705+08:00
+User balance fetched: -303.70
+User balance fetched: -303.70
+Number of charging logics found: 0
+Received coordinates: latitude=1.398922, longitude=103.906479, current_datetime=2024-05-30 02:10:07.436294+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398922, longitude=103.906479, current_datetime=2024-05-30 02:10:07.474431+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398922, longitude=103.906479, current_datetime=2024-05-30 02:10:07.551401+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:08.382386+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:20.774373+08:00
+User balance fetched: -303.70
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:20.904933+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.055302+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.113584+08:00
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.154847+08:00
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.216764+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.270407+08:00
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.307430+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.388335+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.470816+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.551495+08:00
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398921, longitude=103.906483, current_datetime=2024-05-30 02:10:21.601144+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/users/me/
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/users/me/
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/transaction-histories/
+Not Found: /api/transaction-histories/
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399004, longitude=103.90643, current_datetime=2024-05-30 02:10:57.249459+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399004, longitude=103.90643, current_datetime=2024-05-30 02:10:57.312093+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399004, longitude=103.90643, current_datetime=2024-05-30 02:10:57.329536+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398996, longitude=103.906452, current_datetime=2024-05-30 02:13:00.791455+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398996, longitude=103.906452, current_datetime=2024-05-30 02:13:00.850432+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398996, longitude=103.906452, current_datetime=2024-05-30 02:13:00.865837+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398987, longitude=103.906438, current_datetime=2024-05-30 02:15:04.271580+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398987, longitude=103.906438, current_datetime=2024-05-30 02:15:04.352453+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.398987, longitude=103.906438, current_datetime=2024-05-30 02:15:04.358662+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399012, longitude=103.906436, current_datetime=2024-05-30 02:17:07.649445+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Received coordinates: latitude=1.399012, longitude=103.906436, current_datetime=2024-05-30 02:17:07.669179+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.399012, longitude=103.906436, current_datetime=2024-05-30 02:17:07.689187+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398999, longitude=103.906434, current_datetime=2024-05-30 02:19:11.054392+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398999, longitude=103.906434, current_datetime=2024-05-30 02:19:11.096270+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+Received coordinates: latitude=1.398999, longitude=103.906434, current_datetime=2024-05-30 02:19:11.114808+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:58:42.467105+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:58:42.536741+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:58:42.540876+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:22.742556+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:22.873086+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:22.889248+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:24.505969+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:24.552060+08:00
+Number of charging logics found: 0
+Received coordinates: latitude=1.398946, longitude=103.906401, current_datetime=2024-05-30 02:59:24.572239+08:00
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/transaction-histories/
+Not Found: /api/transaction-histories/
+User balance fetched: -303.70
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:03:53.308515+08:00
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:03:53.324702+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:09:13.413419+08:00
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:09:13.397577+08:00
+Number of charging logics found: 0
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/check-and-charge/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+User balance fetched: 0.00
+User balance fetched: 0.00
+User balance fetched: 0.00
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:10:09.954167+08:00
+Number of charging logics found: 0
+User balance fetched: 0.00
+Received coordinates: latitude=1.399017, longitude=103.90644, current_datetime=2024-05-30 03:10:11.727421+08:00
+Number of charging logics found: 0
+User balance fetched: 0.00
+User balance fetched: 0.00
+User balance fetched: 0.00
+User balance fetched: 0.00
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Not Found: /api/transaction-histories/
+Not Found: /api/transaction-histories/
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Not Found: /api/transaction-histories/
+Not Found: /api/transaction-histories/
+User balance fetched: -303.70
+Bad Request: /api/transactions/
+/Users/amalinahashim/Desktop/myproject/core/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/models.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/make-payment/
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/make-payment/
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLt4701FNXxABYUNiePjYNp&confirmation_method=manual&confirm=True
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 400 597
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=400
+body='{\n  "error": {\n    "message": "A `return_url` must be specified because this Payment Intent is configured to automatically accept the payment methods enabled in the Dashboard, some of which may require a full page redirect to succeed. If you do not want to accept redirect-based payment methods, set `automatic_payment_methods[enabled]` to `true` and `automatic_payment_methods[allow_redirects]` to `never` when creating Setup Intents and Payment Intents.",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_wS5yHXTJx2guja?t=1717014344",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_wS5yHXTJx2guja message='Dashboard link for request'
+error_code=None error_message='A `return_url` must be specified because this Payment Intent is configured to automatically accept the payment methods enabled in the Dashboard, some of which may require a full page redirect to succeed. If you do not want to accept redirect-based payment methods, set `automatic_payment_methods[enabled]` to `true` and `automatic_payment_methods[allow_redirects]` to `never` when creating Setup Intents and Payment Intents.' error_param=None error_type=invalid_request_error message='Stripe API error received'
+Internal Server Error: /api/make-payment/
+Traceback (most recent call last):
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/amalinahashim/Desktop/myproject/core/views.py", line 277, in make_payment
+    payment_intent = stripe.PaymentIntent.create(
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/stripe/_payment_intent.py", line 9423, in create
+    cls._static_request(
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/stripe/_api_resource.py", line 177, in _static_request
+    return _APIRequestor._global_instance().request(
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/stripe/_api_requestor.py", line 196, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/stripe/_api_requestor.py", line 732, in _interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "/Users/amalinahashim/Desktop/myproject/myenv/lib/python3.8/site-packages/stripe/_api_requestor.py", line 321, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_wS5yHXTJx2guja: A `return_url` must be specified because this Payment Intent is configured to automatically accept the payment methods enabled in the Dashboard, some of which may require a full page redirect to succeed. If you do not want to accept redirect-based payment methods, set `automatic_payment_methods[enabled]` to `true` and `automatic_payment_methods[allow_redirects]` to `never` when creating Setup Intents and Payment Intents.
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLt8201FNXxABYU2V2YYBpV&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLt8301FNXxABYU17tpuv3E",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLt8301FNXxABYU17tpuv3E_secret_HHfTJCsk3iHzkiNDD8o5bOqdu",\n  "confirmation_method": "manual",\n  "created": 1717014587,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLt8301FNXxABYU1xxFu6Z6",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLt8201FNXxABYU2V2YYBpV",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_0eyB4sNoZ68Dil message='Dashboard link for request'
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtAS01FNXxABYUlHnYWzBj&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtAU01FNXxABYU0eXbprp0",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtAU01FNXxABYU0eXbprp0_secret_dhndBDwp89IkSqiKK55eaiJ3n",\n  "confirmation_method": "manual",\n  "created": 1717014738,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtAU01FNXxABYU0XGhu789",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtAS01FNXxABYUlHnYWzBj",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_EbJB5WlAfH2CPo message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtDP01FNXxABYUTPJzGPXY&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtDR01FNXxABYU16gTlLOz",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtDR01FNXxABYU16gTlLOz_secret_n4oOMfcK0WKlVqQ0wODIEV5bq",\n  "confirmation_method": "manual",\n  "created": 1717014921,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtDR01FNXxABYU1qHY2xvx",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtDP01FNXxABYUTPJzGPXY",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_fWSuU4BREygmVk message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtFt01FNXxABYU1nlmanvc&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtFu01FNXxABYU0JXt48fJ",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtFu01FNXxABYU0JXt48fJ_secret_zqt8LeLU6Rcne1xnarm8HaZM4",\n  "confirmation_method": "manual",\n  "created": 1717015074,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtFu01FNXxABYU0SewkvSr",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtFt01FNXxABYU1nlmanvc",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_wI0WfBJ9suu9J8 message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtIL01FNXxABYUsCgasPsW&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtIM01FNXxABYU0Sfczz8G",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtIM01FNXxABYU0Sfczz8G_secret_DxErHsEL3OirwOKZotFKQpSzx",\n  "confirmation_method": "manual",\n  "created": 1717015226,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtIM01FNXxABYU0POvyelA",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtIL01FNXxABYUsCgasPsW",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_46ESwVWRYy2d3G message='Dashboard link for request'
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtN201FNXxABYUZm4qvGdi&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtN301FNXxABYU0cnkFTPC",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtN301FNXxABYU0cnkFTPC_secret_VwVQp9oeRc88gxuuEhjczggqd",\n  "confirmation_method": "manual",\n  "created": 1717015517,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtN301FNXxABYU0IurjCOw",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtN201FNXxABYUZm4qvGdi",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_idALdYPhVHp4uF message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtQj01FNXxABYUvRgPLOpa&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtQk01FNXxABYU068MczCv",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtQk01FNXxABYU068MczCv_secret_Qo01RjzbwvRgdDRJxiVoUMYfc",\n  "confirmation_method": "manual",\n  "created": 1717015746,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtQk01FNXxABYU0dIsjJMp",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtQj01FNXxABYUvRgPLOpa",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_ODY5f1hPHhQUz9 message='Dashboard link for request'
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtR301FNXxABYUSr7B8Dvk&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtR501FNXxABYU1LgTqhmX",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtR501FNXxABYU1LgTqhmX_secret_dnyyup2PGPvvVkoVAPI8fur4B",\n  "confirmation_method": "manual",\n  "created": 1717015767,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtR501FNXxABYU1NsHAXlS",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtR301FNXxABYUSr7B8Dvk",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_FDWUHpcWuilI9i message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtTo01FNXxABYUph0MYh7S&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtTp01FNXxABYU1xchozi1",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtTp01FNXxABYU1xchozi1_secret_fI3zymaOBqKZW3dCU0GQRqUcU",\n  "confirmation_method": "manual",\n  "created": 1717015937,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtTp01FNXxABYU1xQN2v4e",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtTo01FNXxABYUph0MYh7S",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_3h9bnmOnhN5W2D message='Dashboard link for request'
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtYT01FNXxABYUPj2X3kVO&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtYU01FNXxABYU0sFP3MFX",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtYU01FNXxABYU0sFP3MFX_secret_FllNrEbOCY8nyc4goIlripjG3",\n  "confirmation_method": "manual",\n  "created": 1717016226,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtYU01FNXxABYU0uLvXMeo",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtYT01FNXxABYUPj2X3kVO",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_FjFlwTD3Z9hCfD message='Dashboard link for request'
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+Received coordinates: latitude=1.398686, longitude=103.906362, current_datetime=2024-05-30 04:56:55.190121+08:00
+Number of charging logics found: 0
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+User balance fetched: -303.70
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtl001FNXxABYUZsAfkbet&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtl101FNXxABYU1Hr7aPci",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtl101FNXxABYU1Hr7aPci_secret_8iZFJ36PtluHvknPjYRZyPGvy",\n  "confirmation_method": "manual",\n  "created": 1717017003,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtl101FNXxABYU1Dh9PlRZ",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtl001FNXxABYUZsAfkbet",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_7GEJA47AyY77yL message='Dashboard link for request'
+Error making payment: unsupported operand type(s) for +=: 'decimal.Decimal' and 'float'
+Bad Request: /api/make-payment/
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtlN01FNXxABYUeVsE05OC&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtlO01FNXxABYU01kbwk2Q",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtlO01FNXxABYU01kbwk2Q_secret_Y967LlPd1xcAkMbRKXaNiekPN",\n  "confirmation_method": "manual",\n  "created": 1717017026,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtlO01FNXxABYU0DnCzlDh",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtlN01FNXxABYUeVsE05OC",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_pVzmWMuBYE2st7 message='Dashboard link for request'
+Error making payment: unsupported operand type(s) for +=: 'decimal.Decimal' and 'float'
+Bad Request: /api/make-payment/
+User balance fetched: -303.70
+User balance fetched: -303.70
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtoC01FNXxABYUtUxuuKRL&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtoE01FNXxABYU0yC8n8rS",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtoE01FNXxABYU0yC8n8rS_secret_XMU7tEuOJxOvTns7EDISry0mf",\n  "confirmation_method": "manual",\n  "created": 1717017202,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtoE01FNXxABYU0bk5FJH1",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtoC01FNXxABYUtUxuuKRL",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_DiZ0AUs7NhdasA message='Dashboard link for request'
+Error making payment: name 'Decimal' is not defined
+Bad Request: /api/make-payment/
+User balance fetched: -303.70
+User balance fetched: -303.70
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+User balance fetched: -303.70
+User balance fetched: -303.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=100000&currency=usd&payment_method=pm_1PLtr501FNXxABYUobG9JEGF&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1424
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PLtr601FNXxABYU06zOSsIC",\n  "object": "payment_intent",\n  "amount": 100000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 100000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PLtr601FNXxABYU06zOSsIC_secret_zxrpBsCvt6oVJlceUe6Luanzf",\n  "confirmation_method": "manual",\n  "created": 1717017380,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PLtr601FNXxABYU08L4Usmt",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PLtr501FNXxABYUobG9JEGF",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_qcKJUlmhzF3lry message='Dashboard link for request'
+Payment succeeded. Updated balance: 696.30
+User balance fetched: 696.30
+User balance fetched: 696.30
+User balance fetched: 696.30
+Received coordinates: latitude=1.399012, longitude=103.906431, current_datetime=2024-05-30 05:16:48.704638+08:00
+Number of charging logics found: 1
+Original balance: 696.20, amount: 0.10, new balance: 696.10
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399012, longitude=103.906431, current_datetime=2024-05-30 05:16:50.205505+08:00
+Number of charging logics found: 1
+User balance fetched: 696.10
+User balance fetched: 696.10
+Original balance: 696.00, amount: 0.10, new balance: 695.90
+Transaction created and user charged successfully.
+User balance fetched: 695.90
+Watching for file changes with StatReloader
+User balance fetched: 695.90
+User balance fetched: 695.90
+User balance fetched: 695.90
+User balance fetched: 695.90
