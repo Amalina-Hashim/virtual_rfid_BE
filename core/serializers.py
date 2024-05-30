@@ -103,13 +103,15 @@ class ChargingLogicSerializer(serializers.ModelSerializer):
         return instance
 
 class TransactionHistorySerializer(serializers.ModelSerializer):
-    location_id = serializers.IntegerField(write_only=True)
+    username = serializers.CharField(source='user.username', read_only=True)
+    userId = serializers.IntegerField(source='user.id', read_only=True)
     location = LocationSerializer()
 
     class Meta:
         model = TransactionHistory
-        fields = '__all__'
+        fields = ['id', 'userId', 'username', 'location', 'amount', 'timestamp', 'amount_rate']
         read_only_fields = ['id', 'user', 'timestamp', 'location']
+
 
     def create(self, validated_data):
         location_id = validated_data.pop('location_id')

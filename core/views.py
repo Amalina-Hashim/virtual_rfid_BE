@@ -127,6 +127,8 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         user = self.request.user
+        if user.role == 'admin':
+            return TransactionHistory.objects.all().order_by('-timestamp')
         return TransactionHistory.objects.filter(user=user).order_by('-timestamp')
 
 @api_view(['GET'])

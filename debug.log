@@ -4959,3 +4959,16 @@ Transaction created and user charged successfully.
 Bad Request: /api/token/
 Bad Request: /api/token/
 Not Found: /favicon.ico
+Authenticated user: adminuser555
+Authenticated user: adminuser555
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Authenticated user: adminuser555
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
