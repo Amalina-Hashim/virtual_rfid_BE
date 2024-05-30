@@ -1,5 +1,5 @@
 import logging
-from rest_framework import viewsets, generics, status
+from rest_framework import viewsets, generics, status, permissions
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authtoken.models import Token
@@ -44,14 +44,24 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
+class UserProfileUpdateView(generics.UpdateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_current_user(request):
     try:
+        logger.debug(f"Authenticated user: {request.user}")
         user = request.user
         serializer = UserSerializer(user)
         return Response(serializer.data, status=status.HTTP_200_OK)
     except Exception as e:
+        logger.error(f"Error retrieving current user: {e}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 class LocationViewSet(viewsets.ModelViewSet):

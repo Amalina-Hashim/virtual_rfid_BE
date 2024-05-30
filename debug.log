@@ -4364,3 +4364,598 @@ User balance fetched: 695.90
 User balance fetched: 695.90
 User balance fetched: 695.90
 User balance fetched: 695.90
+User balance fetched: 695.90
+User balance fetched: 695.90
+User balance fetched: 695.90
+User balance fetched: 695.90
+Received coordinates: latitude=1.398791, longitude=103.906328, current_datetime=2024-05-30 05:21:05.483441+08:00
+Number of charging logics found: 1
+Original balance: 695.80, amount: 0.10, new balance: 695.70
+Transaction created and user charged successfully.
+User balance fetched: 695.70
+User balance fetched: 695.70
+Received coordinates: latitude=1.398791, longitude=103.906328, current_datetime=2024-05-30 05:21:15.043289+08:00
+Number of charging logics found: 1
+Original balance: 695.60, amount: 0.10, new balance: 695.50
+Transaction created and user charged successfully.
+User balance fetched: 695.50
+Received coordinates: latitude=1.398791, longitude=103.906328, current_datetime=2024-05-30 05:21:17.002844+08:00
+Number of charging logics found: 1
+User balance fetched: 695.50
+Original balance: 695.40, amount: 0.10, new balance: 695.30
+Transaction created and user charged successfully.
+User balance fetched: 695.30
+User balance fetched: 695.30
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Unauthorized: /api/balance/
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:31:13.719008+08:00
+User balance fetched: 695.30
+Number of charging logics found: 2
+User balance fetched: 695.30
+User balance fetched: 695.30
+Original balance: 695.20, amount: 0.10, new balance: 695.10
+Transaction created and user charged successfully.
+User balance fetched: 695.10
+User balance fetched: 695.10
+User balance fetched: 695.10
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:31:30.509976+08:00
+Number of charging logics found: 2
+Original balance: 695.00, amount: 0.10, new balance: 694.90
+Transaction created and user charged successfully.
+User balance fetched: 694.90
+User balance fetched: 694.90
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:31:32.418721+08:00
+Number of charging logics found: 2
+Original balance: 694.80, amount: 0.10, new balance: 694.70
+Transaction created and user charged successfully.
+User balance fetched: 694.70
+User balance fetched: 694.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=2000&currency=usd&payment_method=pm_1PM4P101FNXxABYUu3F8wP4n&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM4P301FNXxABYU0dz0lCW4",\n  "object": "payment_intent",\n  "amount": 2000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 2000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM4P301FNXxABYU0dz0lCW4_secret_SqoqRMV26nwdigqb6dipEiHZU",\n  "confirmation_method": "manual",\n  "created": 1717057925,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM4P301FNXxABYU0pd6YvNF",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM4P101FNXxABYUu3F8wP4n",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_sgpnMdYjttNtPY message='Dashboard link for request'
+Payment succeeded. Updated balance: 714.70
+User balance fetched: 714.70
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:32:32.860715+08:00
+Number of charging logics found: 2
+Original balance: 714.60, amount: 0.10, new balance: 714.50
+Transaction created and user charged successfully.
+User balance fetched: 714.50
+User balance fetched: 714.50
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:32:34.835681+08:00
+Number of charging logics found: 2
+Original balance: 714.40, amount: 0.10, new balance: 714.30
+User balance fetched: 714.40
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:32:51.323680+08:00
+Number of charging logics found: 2
+User balance fetched: 714.30
+User balance fetched: 714.30
+Original balance: 714.20, amount: 0.10, new balance: 714.10
+Transaction created and user charged successfully.
+User balance fetched: 714.10
+Received coordinates: latitude=1.398959, longitude=103.906404, current_datetime=2024-05-30 16:32:53.101249+08:00
+Number of charging logics found: 2
+User balance fetched: 714.10
+Original balance: 714.00, amount: 0.10, new balance: 713.90
+Transaction created and user charged successfully.
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+User balance fetched: 713.90
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:44:04.205596+08:00
+Number of charging logics found: 2
+Original balance: 713.80, amount: 0.10, new balance: 713.70
+Transaction created and user charged successfully.
+User balance fetched: 713.70
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:44:33.331727+08:00
+Number of charging logics found: 2
+Original balance: 713.60, amount: 0.10, new balance: 713.50
+Transaction created and user charged successfully.
+User balance fetched: 713.50
+User balance fetched: 713.50
+User balance fetched: 713.50
+User balance fetched: 713.50
+User balance fetched: 713.50
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:44:34.679116+08:00
+Number of charging logics found: 2
+User balance fetched: 713.50
+Original balance: 713.40, amount: 0.10, new balance: 713.30
+Transaction created and user charged successfully.
+User balance fetched: 713.30
+User balance fetched: 713.30
+User balance fetched: 713.30
+User balance fetched: 713.30
+User balance fetched: 713.30
+User balance fetched: 713.30
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:44:39.938547+08:00
+Number of charging logics found: 2
+Original balance: 713.20, amount: 0.10, new balance: 713.10
+Transaction created and user charged successfully.
+User balance fetched: 713.10
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:44:41.710919+08:00
+Number of charging logics found: 2
+User balance fetched: 713.10
+Original balance: 713.00, amount: 0.10, new balance: 712.90
+Transaction created and user charged successfully.
+User balance fetched: 712.90
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:45:11.266528+08:00
+Number of charging logics found: 2
+User balance fetched: 712.90
+Original balance: 712.80, amount: 0.10, new balance: 712.70
+Transaction created and user charged successfully.
+User balance fetched: 712.70
+User balance fetched: 712.70
+Received coordinates: latitude=1.398997, longitude=103.90643, current_datetime=2024-05-30 16:45:13.256433+08:00
+Number of charging logics found: 2
+Original balance: 712.60, amount: 0.10, new balance: 712.50
+User balance fetched: 712.60
+Transaction created and user charged successfully.
+User balance fetched: 712.50
+User balance fetched: 712.50
+User balance fetched: 712.50
+User balance fetched: 712.50
+User balance fetched: 712.50
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=2000&currency=usd&payment_method=pm_1PM4ct01FNXxABYUeAZWffPw&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM4cu01FNXxABYU1RiAay4Q",\n  "object": "payment_intent",\n  "amount": 2000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 2000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM4cu01FNXxABYU1RiAay4Q_secret_0IPNihWXWrXuPNZ7fg6I2qx3m",\n  "confirmation_method": "manual",\n  "created": 1717058784,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM4cu01FNXxABYU1YSHZEHx",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM4ct01FNXxABYUeAZWffPw",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_c1ex6oEl265OE0 message='Dashboard link for request'
+Payment succeeded. Updated balance: 732.50
+User balance fetched: 732.50
+User balance fetched: 732.50
+Received coordinates: latitude=1.399017, longitude=103.906446, current_datetime=2024-05-30 16:46:44.249092+08:00
+Number of charging logics found: 2
+Original balance: 732.40, amount: 0.10, new balance: 732.30
+Transaction created and user charged successfully.
+User balance fetched: 732.30
+Received coordinates: latitude=1.399017, longitude=103.906446, current_datetime=2024-05-30 16:46:46.123101+08:00
+Number of charging logics found: 2
+User balance fetched: 732.30
+Original balance: 732.20, amount: 0.10, new balance: 732.10
+Transaction created and user charged successfully.
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+User balance fetched: 732.10
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=2000&currency=usd&payment_method=pm_1PM4i201FNXxABYUwRZgFc9G&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM4i401FNXxABYU1dBZ0uTe",\n  "object": "payment_intent",\n  "amount": 2000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 2000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM4i401FNXxABYU1dBZ0uTe_secret_Ocb7HbmydUD3KE6C8xEhZunM8",\n  "confirmation_method": "manual",\n  "created": 1717059104,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM4i401FNXxABYU1Fim1V55",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM4i201FNXxABYUwRZgFc9G",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_Zz5zKaOGO0xzN0 message='Dashboard link for request'
+Payment succeeded. Updated balance: 752.10
+User balance fetched: 752.10
+User balance fetched: 752.10
+User balance fetched: 752.10
+Received coordinates: latitude=1.399008, longitude=103.906437, current_datetime=2024-05-30 16:52:01.062077+08:00
+Number of charging logics found: 2
+Original balance: 752.00, amount: 0.10, new balance: 751.90
+Transaction created and user charged successfully.
+User balance fetched: 751.90
+Received coordinates: latitude=1.399008, longitude=103.906437, current_datetime=2024-05-30 16:52:02.972897+08:00
+Number of charging logics found: 2
+User balance fetched: 751.90
+Original balance: 751.80, amount: 0.10, new balance: 751.70
+User balance fetched: 751.70
+Transaction created and user charged successfully.
+User balance fetched: 751.70
+User balance fetched: 751.70
+User balance fetched: 751.70
+User balance fetched: 751.70
+User balance fetched: 751.70
+Received coordinates: latitude=1.399004, longitude=103.906425, current_datetime=2024-05-30 16:54:41.027732+08:00
+Number of charging logics found: 2
+User balance fetched: 751.70
+User balance fetched: 751.70
+User balance fetched: 751.60
+Original balance: 751.60, amount: 0.10, new balance: 751.50
+Transaction created and user charged successfully.
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+User balance fetched: 751.50
+Received coordinates: latitude=1.399004, longitude=103.906425, current_datetime=2024-05-30 16:55:51.431506+08:00
+Number of charging logics found: 2
+Original balance: 751.40, amount: 0.10, new balance: 751.30
+Transaction created and user charged successfully.
+User balance fetched: 751.30
+User balance fetched: 751.30
+User balance fetched: 751.30
+User balance fetched: 751.30
+Received coordinates: latitude=1.399004, longitude=103.906425, current_datetime=2024-05-30 16:55:53.354508+08:00
+Number of charging logics found: 2
+User balance fetched: 751.30
+Original balance: 751.20, amount: 0.10, new balance: 751.10
+Transaction created and user charged successfully.
+User balance fetched: 751.10
+User balance fetched: 751.10
+User balance fetched: 751.10
+User balance fetched: 751.10
+User balance fetched: 751.10
+User balance fetched: 751.10
+User balance fetched: 751.10
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=2000&currency=usd&payment_method=pm_1PM4mQ01FNXxABYU19qONoGJ&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM4mR01FNXxABYU1zW2cA3C",\n  "object": "payment_intent",\n  "amount": 2000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 2000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM4mR01FNXxABYU1zW2cA3C_secret_eFe1795xEbJ3oBQssE6W4ESss",\n  "confirmation_method": "manual",\n  "created": 1717059375,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM4mR01FNXxABYU16uNec1Z",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM4mQ01FNXxABYU19qONoGJ",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_iGluQLb15Gu27A message='Dashboard link for request'
+Payment succeeded. Updated balance: 771.10
+User balance fetched: 771.10
+User balance fetched: 771.10
+Received coordinates: latitude=1.399004, longitude=103.906425, current_datetime=2024-05-30 16:56:28.289069+08:00
+Number of charging logics found: 2
+Original balance: 771.00, amount: 0.10, new balance: 770.90
+User balance fetched: 771.00
+Transaction created and user charged successfully.
+User balance fetched: 770.90
+User balance fetched: 770.90
+User balance fetched: 770.90
+User balance fetched: 770.90
+Received coordinates: latitude=1.399003, longitude=103.906434, current_datetime=2024-05-30 16:58:14.851658+08:00
+Number of charging logics found: 2
+User balance fetched: 770.90
+Original balance: 770.80, amount: 0.10, new balance: 770.70
+User balance fetched: 770.80
+Transaction created and user charged successfully.
+User balance fetched: 770.70
+User balance fetched: 770.70
+User balance fetched: 770.70
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+User balance fetched: 770.70
+User balance fetched: 770.70
+User balance fetched: 770.70
+User balance fetched: 770.70
+Received coordinates: latitude=1.399003, longitude=103.906434, current_datetime=2024-05-30 16:58:52.106184+08:00
+Number of charging logics found: 2
+User balance fetched: 770.70
+Original balance: 770.60, amount: 0.10, new balance: 770.50
+Transaction created and user charged successfully.
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+User balance fetched: 770.50
+Received coordinates: latitude=1.399003, longitude=103.906434, current_datetime=2024-05-30 16:58:53.938497+08:00
+Number of charging logics found: 2
+Original balance: 770.40, amount: 0.10, new balance: 770.30
+User balance fetched: 770.30
+Transaction created and user charged successfully.
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+User balance fetched: 770.30
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:10:09.582621+08:00
+Number of charging logics found: 2
+Original balance: 770.20, amount: 0.10, new balance: 770.10
+Transaction created and user charged successfully.
+User balance fetched: 770.10
+User balance fetched: 770.10
+User balance fetched: 770.10
+User balance fetched: 770.10
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:10:18.698316+08:00
+Number of charging logics found: 2
+Original balance: 770.00, amount: 0.10, new balance: 769.90
+User balance fetched: 769.90
+Transaction created and user charged successfully.
+User balance fetched: 769.90
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:10:20.520638+08:00
+Number of charging logics found: 2
+Original balance: 769.80, amount: 0.10, new balance: 769.70
+Transaction created and user charged successfully.
+User balance fetched: 769.70
+User balance fetched: 769.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=2000&currency=usd&payment_method=pm_1PM50X01FNXxABYU7Kh2gr6D&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM50Y01FNXxABYU1WHMo1xP",\n  "object": "payment_intent",\n  "amount": 2000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 2000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM50Y01FNXxABYU1WHMo1xP_secret_EIaTSakxLmcv3lnOiFNoazqv5",\n  "confirmation_method": "manual",\n  "created": 1717060250,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM50Y01FNXxABYU1vWsMdv3",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM50X01FNXxABYU7Kh2gr6D",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_MxnLetLz6lb3Uh message='Dashboard link for request'
+Payment succeeded. Updated balance: 789.70
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:10:51.784138+08:00
+Number of charging logics found: 2
+User balance fetched: 789.70
+Original balance: 789.60, amount: 0.10, new balance: 789.50
+Transaction created and user charged successfully.
+User balance fetched: 789.50
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:10:53.739655+08:00
+Number of charging logics found: 2
+Original balance: 789.40, amount: 0.10, new balance: 789.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:11:06.330330+08:00
+Number of charging logics found: 2
+Original balance: 789.20, amount: 0.10, new balance: 789.10
+Transaction created and user charged successfully.
+User balance fetched: 789.10
+User balance fetched: 789.10
+Received coordinates: latitude=1.39902, longitude=103.906438, current_datetime=2024-05-30 17:11:08.303565+08:00
+Number of charging logics found: 2
+Original balance: 789.00, amount: 0.10, new balance: 788.90
+Transaction created and user charged successfully.
+User balance fetched: 788.90
+User balance fetched: 788.90
+Received coordinates: latitude=1.398956, longitude=103.906438, current_datetime=2024-05-30 17:11:27.238410+08:00
+Number of charging logics found: 2
+Original balance: 788.80, amount: 0.10, new balance: 788.70
+Transaction created and user charged successfully.
+User balance fetched: 788.70
+User balance fetched: 788.70
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:41.616362+08:00
+Number of charging logics found: 2
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:41.641449+08:00
+Original balance: 788.60, amount: 0.10, new balance: 788.50
+Number of charging logics found: 2
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:41.671556+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 2
+User balance fetched: 788.50
+Original balance: 788.60, amount: 0.10, new balance: 788.50
+Transaction created and user charged successfully.
+Original balance: 788.40, amount: 0.10, new balance: 788.30
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:55.862071+08:00
+Number of charging logics found: 2
+Original balance: 788.20, amount: 0.10, new balance: 788.10
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:55.963901+08:00
+Number of charging logics found: 2
+Original balance: 788.00, amount: 0.10, new balance: 787.90
+Transaction created and user charged successfully.
+User balance fetched: 787.90
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:56.063114+08:00
+Number of charging logics found: 2
+Original balance: 787.80, amount: 0.10, new balance: 787.70
+User balance fetched: 787.80
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:56.836733+08:00
+Number of charging logics found: 2
+Received coordinates: latitude=1.398964, longitude=103.906428, current_datetime=2024-05-30 17:11:56.853322+08:00
+Number of charging logics found: 2
+Original balance: 787.60, amount: 0.10, new balance: 787.50
+Transaction created and user charged successfully.
+Original balance: 787.60, amount: 0.10, new balance: 787.50
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398952, longitude=103.906399, current_datetime=2024-05-30 17:12:06.280890+08:00
+Number of charging logics found: 2
+Original balance: 787.40, amount: 0.10, new balance: 787.30
+Transaction created and user charged successfully.
+User balance fetched: 787.30
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:12:09.476493+08:00
+Number of charging logics found: 2
+Original balance: 787.20, amount: 0.10, new balance: 787.10
+Transaction created and user charged successfully.
+User balance fetched: 787.10
+Received coordinates: latitude=1.398962, longitude=103.906399, current_datetime=2024-05-30 17:12:13.737817+08:00
+Number of charging logics found: 2
+User balance fetched: 787.10
+Original balance: 787.00, amount: 0.10, new balance: 786.90
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398962, longitude=103.906399, current_datetime=2024-05-30 17:12:14.135962+08:00
+Number of charging logics found: 2
+Received coordinates: latitude=1.398962, longitude=103.906399, current_datetime=2024-05-30 17:12:14.146488+08:00
+Original balance: 786.80, amount: 0.10, new balance: 786.70
+Number of charging logics found: 2
+Transaction created and user charged successfully.
+Original balance: 786.80, amount: 0.10, new balance: 786.70
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398963, longitude=103.9064, current_datetime=2024-05-30 17:12:14.481352+08:00
+Number of charging logics found: 2
+Received coordinates: latitude=1.398963, longitude=103.9064, current_datetime=2024-05-30 17:12:14.502400+08:00
+Original balance: 786.60, amount: 0.10, new balance: 786.50
+Number of charging logics found: 2
+Transaction created and user charged successfully.
+Original balance: 786.60, amount: 0.10, new balance: 786.50
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398963, longitude=103.9064, current_datetime=2024-05-30 17:12:14.685946+08:00
+Number of charging logics found: 2
+Original balance: 786.40, amount: 0.10, new balance: 786.30
+Received coordinates: latitude=1.398963, longitude=103.9064, current_datetime=2024-05-30 17:12:14.758427+08:00
+Transaction created and user charged successfully.
+Number of charging logics found: 2
+Original balance: 786.20, amount: 0.10, new balance: 786.10
+Transaction created and user charged successfully.
+User balance fetched: 786.10
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:13:35.271015+08:00
+Number of charging logics found: 2
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:13:35.286371+08:00
+Original balance: 786.00, amount: 0.10, new balance: 785.90
+Number of charging logics found: 2
+Transaction created and user charged successfully.
+Original balance: 786.00, amount: 0.10, new balance: 785.90
+Transaction created and user charged successfully.
+User balance fetched: 785.90
+User balance fetched: 785.90
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:13:37.271339+08:00
+Number of charging logics found: 2
+Original balance: 785.80, amount: 0.10, new balance: 785.70
+Transaction created and user charged successfully.
+User balance fetched: 785.70
+User balance fetched: 785.70
+message='Request to Stripe api' method=post url=https://api.stripe.com/v1/payment_intents
+api_version=2024-04-10 message='Post details' post_data=amount=1000&currency=usd&payment_method=pm_1PM53f01FNXxABYU7wX1IQHv&confirmation_method=manual&confirm=True&return_url=http%3A%2F%2Flocalhost%3A8000%2F
+Starting new HTTPS connection (1): api.stripe.com:443
+https://api.stripe.com:443 "POST /v1/payment_intents HTTP/1.1" 200 1420
+message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+body='{\n  "id": "pi_3PM53h01FNXxABYU0D1upwzs",\n  "object": "payment_intent",\n  "amount": 1000,\n  "amount_capturable": 0,\n  "amount_details": {\n    "tip": {}\n  },\n  "amount_received": 1000,\n  "application": null,\n  "application_fee_amount": null,\n  "automatic_payment_methods": {\n    "allow_redirects": "always",\n    "enabled": true\n  },\n  "canceled_at": null,\n  "cancellation_reason": null,\n  "capture_method": "automatic_async",\n  "client_secret": "pi_3PM53h01FNXxABYU0D1upwzs_secret_seakABq2QFKKF8IoUJRYW8DvP",\n  "confirmation_method": "manual",\n  "created": 1717060445,\n  "currency": "usd",\n  "customer": null,\n  "description": null,\n  "invoice": null,\n  "last_payment_error": null,\n  "latest_charge": "ch_3PM53h01FNXxABYU0PIg04mB",\n  "livemode": false,\n  "metadata": {},\n  "next_action": null,\n  "on_behalf_of": null,\n  "payment_method": "pm_1PM53f01FNXxABYU7wX1IQHv",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "installments": null,\n      "mandate_options": null,\n      "network": null,\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "processing": null,\n  "receipt_email": null,\n  "review": null,\n  "setup_future_usage": null,\n  "shipping": null,\n  "source": null,\n  "statement_descriptor": null,\n  "statement_descriptor_suffix": null,\n  "status": "succeeded",\n  "transfer_data": null,\n  "transfer_group": null\n}' message='API response body'
+link=https://dashboard.stripe.com/test/logs/req_8aKjTVgu62mYhz message='Dashboard link for request'
+Payment succeeded. Updated balance: 795.70
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:14:05.932026+08:00
+Number of charging logics found: 2
+User balance fetched: 795.70
+User balance fetched: 795.70
+Original balance: 795.60, amount: 0.10, new balance: 795.50
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.398982, longitude=103.906432, current_datetime=2024-05-30 17:14:07.897345+08:00
+Number of charging logics found: 2
+Original balance: 795.40, amount: 0.10, new balance: 795.30
+Transaction created and user charged successfully.
+Current instance location_name: punggol cove 200
+Updated location: {'id': 57, 'country': 'SINGAPORE', 'latitude': '1.4023046', 'longitude': '103.9022448', 'address_name': '', 'location_name': 'punggol cove 200', 'radius': '986.87', 'polygon_points': []}
+Received coordinates: latitude=1.399009, longitude=103.906441, current_datetime=2024-05-30 17:18:44.524690+08:00
+Received coordinates: latitude=1.399009, longitude=103.906441, current_datetime=2024-05-30 17:18:44.532339+08:00
+Number of charging logics found: 2
+User balance fetched: 795.30
+Number of charging logics found: 2
+Original balance: 795.10, amount: 0.20, new balance: 794.90
+Transaction created and user charged successfully.
+Original balance: 795.10, amount: 0.20, new balance: 794.90
+Transaction created and user charged successfully.
+User balance fetched: 794.90
+Received coordinates: latitude=1.399009, longitude=103.906441, current_datetime=2024-05-30 17:18:46.495993+08:00
+Number of charging logics found: 2
+Original balance: 794.70, amount: 0.20, new balance: 794.50
+Transaction created and user charged successfully.
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+User balance fetched: 794.50
+Received coordinates: latitude=1.399023, longitude=103.90645, current_datetime=2024-05-30 17:22:44.471605+08:00
+Number of charging logics found: 2
+Original balance: 794.30, amount: 0.20, new balance: 794.10
+Transaction created and user charged successfully.
+User balance fetched: 794.10
+Received coordinates: latitude=1.399023, longitude=103.90645, current_datetime=2024-05-30 17:23:35.391841+08:00
+Number of charging logics found: 2
+Original balance: 793.90, amount: 0.20, new balance: 793.70
+Transaction created and user charged successfully.
+Received coordinates: latitude=1.399023, longitude=103.90645, current_datetime=2024-05-30 17:23:37.200364+08:00
+Number of charging logics found: 2
+Original balance: 793.50, amount: 0.20, new balance: 793.30
+Transaction created and user charged successfully.
+User balance fetched: 793.30
+User balance fetched: 793.30
+User balance fetched: 793.30
+User balance fetched: 793.30
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+Not Found: /api/users/me/
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/users/me/
+/Users/amalinahashim/Desktop/myproject/myproject/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/users/me/
+Authenticated user: Bruce
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/core/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/amalinahashim/Desktop/myproject/myproject/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+Authenticated user: Bruce
+User balance fetched: 793.30
+User balance fetched: 793.30
+Received coordinates: latitude=1.398924, longitude=103.906415, current_datetime=2024-05-30 19:30:48.244125+08:00
+Number of charging logics found: 2
+Original balance: 793.10, amount: 0.20, new balance: 792.90
+Transaction created and user charged successfully.
+Bad Request: /api/token/
+Bad Request: /api/token/
+Not Found: /favicon.ico

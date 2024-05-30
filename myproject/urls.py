@@ -3,6 +3,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from core import views
 from rest_framework.authtoken.views import obtain_auth_token
+from core.views import UserProfileUpdateView
 
 router = DefaultRouter()
 router.register(r'users', views.UserViewSet)
@@ -20,6 +21,8 @@ urlpatterns = [
     path('api/balance/', views.get_balance, name='get_balance'),
     path('api/charging-logic/location/', views.get_charging_logic_by_location, name='get_charging_logic_by_location'),
     path('api/current-user/', views.get_current_user, name='get_current_user'),
+    path('api/users/me/', views.get_current_user, name='get_current_user'),
+    path('api/profile/update/', UserProfileUpdateView.as_view(), name='profile-update'),
     path('api/transactions/create/', views.create_transaction, name='create_transaction'),
     path('api/check-and-charge/', views.check_and_charge_user, name='check_and_charge_user'),
     path('api/make-payment/', views.make_payment, name='make_payment'),  
