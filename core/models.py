@@ -57,14 +57,14 @@ class ChargingLogic(models.Model):
     days = models.ManyToManyField(Day)
     months = models.ManyToManyField(Month)
     years = models.ManyToManyField(Year)
-
-    def __str__(self):
-        return f"{self.location.location_name} - {self.amount_to_charge} {self.amount_rate}"
+    is_enabled = models.BooleanField(default=True)
 
     def is_applicable(self, date_time):
+        if not self.is_enabled:
+            return False
         return (
-            date_time.strftime('%A') in [day.name for day in self.days.all()] and
-            date_time.strftime('%B') in [month.name for month in self.months.all()] and
+            date_time.strftime('%A').lower() in [day.name.lower() for day in self.days.all()] and
+            date_time.strftime('%B').lower() in [month.name.lower() for month in self.months.all()] and
             date_time.year in [year.year for year in self.years.all()] and
             self.start_time <= date_time.time() <= self.end_time
         )

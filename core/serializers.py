@@ -53,11 +53,11 @@ class ChargingLogicSerializer(serializers.ModelSerializer):
     months = MonthField(slug_field='name', queryset=Month.objects.all(), many=True)
     years = YearField(slug_field='year', queryset=Year.objects.all(), many=True)
     location_name = serializers.SerializerMethodField()
-    location = LocationSerializer()  # Use LocationSerializer to include full location details
+    location = LocationSerializer()  
 
     class Meta:
         model = ChargingLogic
-        fields = ['id', 'location', 'start_time', 'end_time', 'amount_to_charge', 'amount_rate', 'days', 'months', 'years', 'location_name']
+        fields = ['id', 'location', 'start_time', 'end_time', 'amount_to_charge', 'amount_rate', 'days', 'months', 'years', 'location_name', 'is_enabled']
 
     def get_location_name(self, obj):
         return obj.location.location_name if obj.location else None

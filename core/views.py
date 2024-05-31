@@ -6,7 +6,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from core.models import User, Location, ChargingLogic, TransactionHistory, Day, Month, Year, Payment
 from core.serializers import UserSerializer, LocationSerializer, ChargingLogicSerializer, TransactionHistorySerializer, PaymentSerializer
-from django.db.models import Q
+from django.db.models import Q, F
 from math import radians, cos, sin, sqrt, atan2
 from django.utils import timezone
 from django.conf import settings
@@ -135,8 +135,43 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
 def get_charging_logics(request):
     charging_logics = ChargingLogic.objects.all()
     serializer = ChargingLogicSerializer(charging_logics, many=True)
-    print("Serialized data:", serializer.data)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def get_charging_logic_status(request):
+    charging_logics = ChargingLogic.objects.all()
+    serializer = ChargingLogicSerializer(charging_logics, many=True)
+    return Response(serializer.data)
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def enable_charging_logic(request, pk):
+    try:
+        charging_logic = ChargingLogic.objects.get(pk=pk)
+        charging_logic.is_enabled = True
+        charging_logic.save()
+        logger.debug(f"Charging logic {pk} enabled.")
+        return Response({"status": "enabled"}, status=status.HTTP_200_OK)
+    except ChargingLogic.DoesNotExist:
+        return Response({"error": "Charging logic not found"}, status=status.HTTP_404_NOT_FOUND)
+    except Exception as e:
+        logger.error(f"Error enabling charging logic: {str(e)}")
+        return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def disable_charging_logic(request, pk):
+    try:
+        charging_logic = ChargingLogic.objects.get(pk=pk)
+        charging_logic.is_enabled = False
+        charging_logic.save()
+        logger.debug(f"Charging logic {pk} disabled.")
+        return Response({"status": "disabled"}, status=status.HTTP_200_OK)
+    except ChargingLogic.DoesNotExist:
+        return Response({"error": "Charging logic not found"}, status=status.HTTP_404_NOT_FOUND)
+    except Exception as e:
+        logger.error(f"Error disabling charging logic: {str(e)}")
+        return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -230,50 +265,114 @@ def create_transaction(request):
 @permission_classes([IsAuthenticated])
 def check_and_charge_user(request):
     try:
-        latitude = float(request.data.get('latitude'))
-        longitude = float(request.data.get('longitude'))
+        latitude = request.data.get('latitude')
+        longitude = request.data.get('longitude')
+
+        if latitude is None or longitude is None:
+            return Response({"error": "Latitude and longitude are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        latitude = float(latitude)
+        longitude = float(longitude)
 
         singapore_tz = pytz.timezone('Asia/Singapore')
         current_datetime = timezone.localtime(timezone.now(), singapore_tz)
+        current_time = current_datetime.time()
+        current_day = current_datetime.strftime('%A')
+        current_month = current_datetime.strftime('%B')
+        current_year = current_datetime.year
 
         logger.debug(f"Received coordinates: latitude={latitude}, longitude={longitude}, current_datetime={current_datetime}")
 
         charging_logics = ChargingLogic.objects.filter(
-            Q(start_time__lte=current_datetime.time()) &
-            Q(end_time__gte=current_datetime.time())
+            Q(is_enabled=True) &
+            (
+                Q(start_time__lte=current_time, end_time__gte=current_time) |
+                Q(start_time__lte=current_time, end_time__lte=F('start_time')) |
+                Q(start_time__gte=F('end_time'), end_time__gte=current_time)
+            )
         )
 
         logger.debug(f"Number of charging logics found: {charging_logics.count()}")
 
+        if not charging_logics.exists():
+            logger.debug("No charging logics found matching the criteria")
+            return Response({'balance': request.user.balance}, status=status.HTTP_200_OK)
+
         for logic in charging_logics:
             location = logic.location
+            logger.debug(f"Evaluating charging logic: {logic.id} for location: {location.location_name}")
 
-            if logic.is_applicable(current_datetime):
-                user = request.user
-                amount = logic.amount_to_charge
-                user.balance -= amount
-                user.save()
-                
-                transaction = TransactionHistory.objects.create(
-                    user=user,
-                    location=location,
-                    amount=amount,
-                    amount_rate=logic.amount_rate  
-                )
-                transaction_serializer = TransactionHistorySerializer(transaction)
-                location_serializer = LocationSerializer(location)  
-                response_data = {
-                    'transaction': transaction_serializer.data,
-                    'location': location_serializer.data,  
-                }
-                logger.debug("Transaction created and user charged successfully.")
-                return Response(response_data, status=status.HTTP_200_OK)
+            if not logic.days.filter(name__iexact=current_day).exists():
+                logger.debug(f"Current day {current_day} not in days {list(logic.days.all())}")
+                continue
+
+            if not logic.months.filter(name__iexact=current_month).exists():
+                logger.debug(f"Current month {current_month} not in months {list(logic.months.all())}")
+                continue
+
+            if not logic.years.filter(year=current_year).exists():
+                logger.debug(f"Current year {current_year} not in years {list(logic.years.all())}")
+                continue
+
+            if location.latitude is not None and location.longitude is not None:
+                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
+                logger.debug(f"Calculated distance to location {location.location_name}: {distance} km, Radius: {location.radius} km")
+
+                if distance <= float(location.radius):
+                    logger.debug(f"User is within radius for location: {location.location_name}")
+
+                    user = request.user
+                    amount = logic.amount_to_charge
+                    user.balance -= amount
+                    user.save()
+
+                    transaction = TransactionHistory.objects.create(
+                        user=user,
+                        location=location,
+                        amount=amount,
+                        amount_rate=logic.amount_rate
+                    )
+                    transaction_serializer = TransactionHistorySerializer(transaction)
+                    location_serializer = LocationSerializer(location)
+                    response_data = {
+                        'transaction': transaction_serializer.data,
+                        'location': location_serializer.data,
+                    }
+                    logger.debug("Transaction created and user charged successfully.")
+                    return Response(response_data, status=status.HTTP_200_OK)
+                else:
+                    logger.debug(f"User is not within radius for location: {location.location_name}")
+            else:
+                if is_point_in_polygon(latitude, longitude, location.polygon_points):
+                    logger.debug(f"User is within polygon for location: {location.location_name}")
+
+                    user = request.user
+                    amount = logic.amount_to_charge
+                    user.balance -= amount
+                    user.save()
+
+                    transaction = TransactionHistory.objects.create(
+                        user=user,
+                        location=location,
+                        amount=amount,
+                        amount_rate=logic.amount_rate
+                    )
+                    transaction_serializer = TransactionHistorySerializer(transaction)
+                    location_serializer = LocationSerializer(location)
+                    response_data = {
+                        'transaction': transaction_serializer.data,
+                        'location': location_serializer.data,
+                    }
+                    logger.debug("Transaction created and user charged successfully.")
+                    return Response(response_data, status=status.HTTP_200_OK)
 
         user = request.user
+        logger.debug(f"No applicable charging logic found, returning balance: {user.balance}")
         return Response({'balance': user.balance}, status=status.HTTP_200_OK)
     except Exception as e:
-        logger.error(f"Error: {str(e)}")
+        logger.error(f"Error during check and charge user: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
