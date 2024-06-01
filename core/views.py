@@ -11,10 +11,11 @@ from math import radians, cos, sin, sqrt, atan2
 from django.utils import timezone
 from django.conf import settings
 import stripe
-from datetime import datetime
 import pytz
+from django.views.decorators.csrf import csrf_exempt
+from decimal import Decimal
+from django.utils.dateparse import parse_datetime 
 from django.http import JsonResponse
-from decimal import Decimal 
 
 logger = logging.getLogger(__name__)
 
@@ -261,27 +262,45 @@ def create_transaction(request):
     logger.debug(f"Serializer errors: {serializer.errors}")
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+from decimal import Decimal
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def check_and_charge_user(request):
     try:
-        latitude = request.data.get('latitude')
-        longitude = request.data.get('longitude')
+        data = request.data
+        logger.debug(f"Received data: {data}")
 
-        if latitude is None or longitude is None:
-            return Response({"error": "Latitude and longitude are required."}, status=status.HTTP_400_BAD_REQUEST)
+        latitude = data.get('latitude')
+        longitude = data.get('longitude')
+        timestamp = data.get('timestamp')
 
-        latitude = float(latitude)
-        longitude = float(longitude)
+        if latitude is None or longitude is None or timestamp is None:
+            logger.error("One or more required fields are None")
+            return JsonResponse({'error': 'Invalid data: latitude, longitude, and timestamp are required.'}, status=400)
 
-        singapore_tz = pytz.timezone('Asia/Singapore')
-        current_datetime = timezone.localtime(timezone.now(), singapore_tz)
+        try:
+            latitude = float(latitude)
+            longitude = float(longitude)
+        except ValueError:
+            logger.error("Latitude and longitude must be valid numbers.")
+            return JsonResponse({"error": "Latitude and longitude must be valid numbers."}, status=400)
+
+        try:
+            parsed_timestamp = parse_datetime(timestamp)
+            if parsed_timestamp is None:
+                raise ValueError("Invalid ISO format string")
+        except (ValueError, TypeError) as e:
+            logger.error(f"Error parsing timestamp: {str(e)}")
+            return JsonResponse({"error": "Invalid ISO format string for timestamp"}, status=400)
+
+        current_datetime = timezone.localtime(parsed_timestamp)
         current_time = current_datetime.time()
         current_day = current_datetime.strftime('%A')
         current_month = current_datetime.strftime('%B')
         current_year = current_datetime.year
 
-        logger.debug(f"Received coordinates: latitude={latitude}, longitude={longitude}, current_datetime={current_datetime}")
+        logger.debug(f"Parsed datetime: current_time={current_time}, current_day={current_day}, current_month={current_month}, current_year={current_year}")
 
         charging_logics = ChargingLogic.objects.filter(
             Q(is_enabled=True) &
@@ -295,84 +314,91 @@ def check_and_charge_user(request):
         logger.debug(f"Number of charging logics found: {charging_logics.count()}")
 
         if not charging_logics.exists():
-            logger.debug("No charging logics found matching the criteria")
-            return Response({'balance': request.user.balance}, status=status.HTTP_200_OK)
+            return JsonResponse({'balance': request.user.balance}, status=200)
+
+        user = request.user
+        charge_applied = False
 
         for logic in charging_logics:
             location = logic.location
-            logger.debug(f"Evaluating charging logic: {logic.id} for location: {location.location_name}")
 
             if not logic.days.filter(name__iexact=current_day).exists():
-                logger.debug(f"Current day {current_day} not in days {list(logic.days.all())}")
                 continue
 
             if not logic.months.filter(name__iexact=current_month).exists():
-                logger.debug(f"Current month {current_month} not in months {list(logic.months.all())}")
                 continue
 
             if not logic.years.filter(year=current_year).exists():
-                logger.debug(f"Current year {current_year} not in years {list(logic.years.all())}")
                 continue
 
-            if location.latitude is not None and location.longitude is not None:
-                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
-                logger.debug(f"Calculated distance to location {location.location_name}: {distance} km, Radius: {location.radius} km")
+            # Check for polygon geofence
+            if location.polygon_points:
+                try:
+                    points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
+                    if is_point_in_polygon(latitude, longitude, points):
+                        amount = Decimal(logic.amount_to_charge)
+                        logger.debug(f"Charging user: {user.username}, Amount: {amount}, Previous Balance: {user.balance}")
 
-                if distance <= float(location.radius):
-                    logger.debug(f"User is within radius for location: {location.location_name}")
+                        user.balance -= amount
+                        user.save()
+                        logger.debug(f"New Balance: {user.balance}")
 
-                    user = request.user
-                    amount = logic.amount_to_charge
-                    user.balance -= amount
-                    user.save()
+                        transaction = TransactionHistory.objects.create(
+                            user=user,
+                            location=location,
+                            amount=amount,
+                            amount_rate=logic.amount_rate
+                        )
+                        transaction_serializer = TransactionHistorySerializer(transaction)
+                        location_serializer = LocationSerializer(location)
+                        response_data = {
+                            'transaction': transaction_serializer.data,
+                            'location': location_serializer.data,
+                        }
+                        charge_applied = True
+                        return JsonResponse(response_data, status=200)
+                except ValueError as e:
+                    logger.error(f"Error parsing polygon points: {str(e)}")
+                    continue
 
-                    transaction = TransactionHistory.objects.create(
-                        user=user,
-                        location=location,
-                        amount=amount,
-                        amount_rate=logic.amount_rate
-                    )
-                    transaction_serializer = TransactionHistorySerializer(transaction)
-                    location_serializer = LocationSerializer(location)
-                    response_data = {
-                        'transaction': transaction_serializer.data,
-                        'location': location_serializer.data,
-                    }
-                    logger.debug("Transaction created and user charged successfully.")
-                    return Response(response_data, status=status.HTTP_200_OK)
-                else:
-                    logger.debug(f"User is not within radius for location: {location.location_name}")
-            else:
-                if is_point_in_polygon(latitude, longitude, location.polygon_points):
-                    logger.debug(f"User is within polygon for location: {location.location_name}")
+            # Check for circular geofence
+            if location.latitude is not None and location.longitude is not None and location.radius is not None:
+                try:
+                    radius = float(location.radius)
+                    distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
+                    logger.debug(f"Calculated distance: {distance}, Radius: {radius}")
+                    if distance <= radius:
+                        amount = Decimal(logic.amount_to_charge)
+                        logger.debug(f"Charging user: {user.username}, Amount: {amount}, Previous Balance: {user.balance}")
 
-                    user = request.user
-                    amount = logic.amount_to_charge
-                    user.balance -= amount
-                    user.save()
+                        user.balance -= amount
+                        user.save()
+                        logger.debug(f"New Balance: {user.balance}")
 
-                    transaction = TransactionHistory.objects.create(
-                        user=user,
-                        location=location,
-                        amount=amount,
-                        amount_rate=logic.amount_rate
-                    )
-                    transaction_serializer = TransactionHistorySerializer(transaction)
-                    location_serializer = LocationSerializer(location)
-                    response_data = {
-                        'transaction': transaction_serializer.data,
-                        'location': location_serializer.data,
-                    }
-                    logger.debug("Transaction created and user charged successfully.")
-                    return Response(response_data, status=status.HTTP_200_OK)
+                        transaction = TransactionHistory.objects.create(
+                            user=user,
+                            location=location,
+                            amount=amount,
+                            amount_rate=logic.amount_rate
+                        )
+                        transaction_serializer = TransactionHistorySerializer(transaction)
+                        location_serializer = LocationSerializer(location)
+                        response_data = {
+                            'transaction': transaction_serializer.data,
+                            'location': location_serializer.data,
+                        }
+                        charge_applied = True
+                        return JsonResponse(response_data, status=200)
+                except ValueError as e:
+                    logger.error(f"Error calculating distance: {str(e)}")
+                    continue
 
-        user = request.user
-        logger.debug(f"No applicable charging logic found, returning balance: {user.balance}")
-        return Response({'balance': user.balance}, status=status.HTTP_200_OK)
+        if not charge_applied:
+            return JsonResponse({'balance': user.balance}, status=200)
+
     except Exception as e:
         logger.error(f"Error during check and charge user: {str(e)}")
-        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
+        return JsonResponse({'error': str(e)}, status=400)
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
