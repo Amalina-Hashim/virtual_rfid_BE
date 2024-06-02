@@ -20,6 +20,7 @@ from django.utils.dateparse import parse_datetime
 import math
 from shapely.geometry import Point, Polygon
 
+
 logger = logging.getLogger(__name__)
 
 
@@ -126,7 +127,7 @@ class ChargingLogicViewSet(viewsets.ModelViewSet):
         serializer.save()
 
 class TransactionHistoryViewSet(viewsets.ModelViewSet):
-    queryset = TransactionHistory.objects.all()
+    queryset = TransactionHistory.objects.all().order_by('-timestamp')
     serializer_class = TransactionHistorySerializer
     permission_classes = [IsAuthenticated]
 
@@ -135,6 +136,7 @@ class TransactionHistoryViewSet(viewsets.ModelViewSet):
         if user.role == 'admin':
             return TransactionHistory.objects.all().order_by('-timestamp')
         return TransactionHistory.objects.filter(user=user).order_by('-timestamp')
+
 
 @api_view(['GET'])
 def get_charging_logics(request):
@@ -275,8 +277,8 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * c  # Distance in meters
 
 def is_point_in_polygon(lat, lon, polygon_points):
-    point = Point(lon, lat)  # Note that Point takes coordinates in (x, y) = (longitude, latitude)
-    polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  # Ensure the polygon points are in (longitude, latitude) order
+    point = Point(lon, lat)  
+    polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  
     logger.debug(f"Point: {point}, Polygon: {polygon}")
     is_within = polygon.contains(point)
     logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
