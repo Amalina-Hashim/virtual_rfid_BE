@@ -18,6 +18,7 @@ from django.http import JsonResponse
 from datetime import timedelta
 from django.utils.dateparse import parse_datetime
 import math
+from shapely.geometry import Point, Polygon
 
 logger = logging.getLogger(__name__)
 
@@ -268,24 +269,18 @@ def create_transaction(request):
 def haversine(lat1, lon1, lat2, lon2):
     R = 6371000  # Earth radius in meters
     dlat = math.radians(lat2 - lat1)
-    dlon = math.radians(lon1 - lon1)
+    dlon = math.radians(lon2 - lon1)
     a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return R * c  # Distance in meters
 
 def is_point_in_polygon(lat, lon, polygon_points):
-    num = len(polygon_points)
-    j = num - 1
-    inside = False
-
-    for i in range(num):
-        xi, yi = polygon_points[i]
-        xj, yj = polygon_points[j]
-        if ((yi > lat) != (yj > lat)) and (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi):
-            inside = not inside
-        j = i
-
-    return inside
+    point = Point(lon, lat)  # Note that Point takes coordinates in (x, y) = (longitude, latitude)
+    polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  # Ensure the polygon points are in (longitude, latitude) order
+    logger.debug(f"Point: {point}, Polygon: {polygon}")
+    is_within = polygon.contains(point)
+    logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
+    return is_within
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -342,15 +337,22 @@ def check_and_charge_user(request):
 
             if location.polygon_points:
                 points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
+                logger.debug(f"Checking point ({latitude}, {longitude}) within polygon: {points}")
                 if is_point_in_polygon(latitude, longitude, points):
+                    logger.debug(f"Point ({latitude}, {longitude}) is within the polygon.")
                     within_geofence = True
+                else:
+                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the polygon.")
 
             if location.latitude is not None and location.longitude is not None and location.radius is not None:
                 radius = float(location.radius) 
                 distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
                 logger.debug(f"Calculated distance to location {location.location_name}: {distance:.2f} meters, Radius: {radius:.2f} meters")
                 if distance <= radius:
+                    logger.debug(f"Point ({latitude}, {longitude}) is within the radius of {radius} meters.")
                     within_geofence = True
+                else:
+                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the radius of {radius} meters.")
 
             if not within_geofence:
                 logger.debug(f"User not within geofence for location: {location.location_name}")
@@ -401,7 +403,8 @@ def check_and_charge_user(request):
                     'charging_logic': {
                         'amount_to_charge': logic.amount_to_charge,
                         'amount_rate': logic.amount_rate
-                    }
+                    },
+                    'balance': user.balance
                 }
                 charge_applied = True
                 return Response(response_data, status=status.HTTP_200_OK)
@@ -412,7 +415,7 @@ def check_and_charge_user(request):
     except Exception as e:
         logger.error(f"Error during check and charge user: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-    
+
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 @api_view(['POST'])
