@@ -12,12 +12,15 @@ from django.utils import timezone
 from django.conf import settings
 import stripe
 import pytz
-from django.views.decorators.csrf import csrf_exempt
 from decimal import Decimal
 from django.utils.dateparse import parse_datetime 
 from django.http import JsonResponse
+from datetime import timedelta
+from django.utils.dateparse import parse_datetime
+import math
 
 logger = logging.getLogger(__name__)
+
 
 class UserCreateView(generics.CreateAPIView):
     queryset = User.objects.all()
@@ -262,45 +265,54 @@ def create_transaction(request):
     logger.debug(f"Serializer errors: {serializer.errors}")
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-from decimal import Decimal
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371000  # Earth radius in meters
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon1 - lon1)
+    a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    return R * c  # Distance in meters
+
+def is_point_in_polygon(lat, lon, polygon_points):
+    num = len(polygon_points)
+    j = num - 1
+    inside = False
+
+    for i in range(num):
+        xi, yi = polygon_points[i]
+        xj, yj = polygon_points[j]
+        if ((yi > lat) != (yj > lat)) and (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi):
+            inside = not inside
+        j = i
+
+    return inside
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def check_and_charge_user(request):
     try:
         data = request.data
-        logger.debug(f"Received data: {data}")
-
         latitude = data.get('latitude')
         longitude = data.get('longitude')
         timestamp = data.get('timestamp')
 
         if latitude is None or longitude is None or timestamp is None:
-            logger.error("One or more required fields are None")
-            return JsonResponse({'error': 'Invalid data: latitude, longitude, and timestamp are required.'}, status=400)
+            return Response({'error': 'Invalid data: latitude, longitude, and timestamp are required.'}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
             latitude = float(latitude)
             longitude = float(longitude)
-        except ValueError:
-            logger.error("Latitude and longitude must be valid numbers.")
-            return JsonResponse({"error": "Latitude and longitude must be valid numbers."}, status=400)
-
-        try:
             parsed_timestamp = parse_datetime(timestamp)
             if parsed_timestamp is None:
                 raise ValueError("Invalid ISO format string")
         except (ValueError, TypeError) as e:
-            logger.error(f"Error parsing timestamp: {str(e)}")
-            return JsonResponse({"error": "Invalid ISO format string for timestamp"}, status=400)
+            return Response({"error": "Invalid input"}, status=status.HTTP_400_BAD_REQUEST)
 
         current_datetime = timezone.localtime(parsed_timestamp)
         current_time = current_datetime.time()
         current_day = current_datetime.strftime('%A')
         current_month = current_datetime.strftime('%B')
         current_year = current_datetime.year
-
-        logger.debug(f"Parsed datetime: current_time={current_time}, current_day={current_day}, current_month={current_month}, current_year={current_year}")
 
         charging_logics = ChargingLogic.objects.filter(
             Q(is_enabled=True) &
@@ -310,11 +322,6 @@ def check_and_charge_user(request):
                 Q(start_time__gte=F('end_time'), end_time__gte=current_time)
             )
         )
-
-        logger.debug(f"Number of charging logics found: {charging_logics.count()}")
-
-        if not charging_logics.exists():
-            return JsonResponse({'balance': request.user.balance}, status=200)
 
         user = request.user
         charge_applied = False
@@ -331,75 +338,81 @@ def check_and_charge_user(request):
             if not logic.years.filter(year=current_year).exists():
                 continue
 
-            # Check for polygon geofence
+            within_geofence = False
+
             if location.polygon_points:
-                try:
-                    points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
-                    if is_point_in_polygon(latitude, longitude, points):
-                        amount = Decimal(logic.amount_to_charge)
-                        logger.debug(f"Charging user: {user.username}, Amount: {amount}, Previous Balance: {user.balance}")
+                points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
+                if is_point_in_polygon(latitude, longitude, points):
+                    within_geofence = True
 
-                        user.balance -= amount
-                        user.save()
-                        logger.debug(f"New Balance: {user.balance}")
-
-                        transaction = TransactionHistory.objects.create(
-                            user=user,
-                            location=location,
-                            amount=amount,
-                            amount_rate=logic.amount_rate
-                        )
-                        transaction_serializer = TransactionHistorySerializer(transaction)
-                        location_serializer = LocationSerializer(location)
-                        response_data = {
-                            'transaction': transaction_serializer.data,
-                            'location': location_serializer.data,
-                        }
-                        charge_applied = True
-                        return JsonResponse(response_data, status=200)
-                except ValueError as e:
-                    logger.error(f"Error parsing polygon points: {str(e)}")
-                    continue
-
-            # Check for circular geofence
             if location.latitude is not None and location.longitude is not None and location.radius is not None:
-                try:
-                    radius = float(location.radius)
-                    distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
-                    logger.debug(f"Calculated distance: {distance}, Radius: {radius}")
-                    if distance <= radius:
-                        amount = Decimal(logic.amount_to_charge)
-                        logger.debug(f"Charging user: {user.username}, Amount: {amount}, Previous Balance: {user.balance}")
+                radius = float(location.radius) 
+                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
+                logger.debug(f"Calculated distance to location {location.location_name}: {distance:.2f} meters, Radius: {radius:.2f} meters")
+                if distance <= radius:
+                    within_geofence = True
 
-                        user.balance -= amount
-                        user.save()
-                        logger.debug(f"New Balance: {user.balance}")
+            if not within_geofence:
+                logger.debug(f"User not within geofence for location: {location.location_name}")
+                continue
 
-                        transaction = TransactionHistory.objects.create(
-                            user=user,
-                            location=location,
-                            amount=amount,
-                            amount_rate=logic.amount_rate
-                        )
-                        transaction_serializer = TransactionHistorySerializer(transaction)
-                        location_serializer = LocationSerializer(location)
-                        response_data = {
-                            'transaction': transaction_serializer.data,
-                            'location': location_serializer.data,
-                        }
-                        charge_applied = True
-                        return JsonResponse(response_data, status=200)
-                except ValueError as e:
-                    logger.error(f"Error calculating distance: {str(e)}")
-                    continue
+            if user.last_check_in is None:
+                user.last_check_in = current_datetime
+                user.save()
+                continue  # Skip charging for the first check-in
+
+            time_elapsed = current_datetime - user.last_check_in
+            total_seconds_elapsed = time_elapsed.total_seconds()
+
+            interval_elapsed = False
+            if logic.amount_rate == 'second' and total_seconds_elapsed >= 1:
+                interval_elapsed = True
+            elif logic.amount_rate == 'minute' and total_seconds_elapsed >= 60:
+                interval_elapsed = True
+            elif logic.amount_rate == 'hour' and total_seconds_elapsed >= 3600:
+                interval_elapsed = True
+            elif logic.amount_rate == 'day' and total_seconds_elapsed >= 86400:
+                interval_elapsed = True
+            elif logic.amount_rate == 'week' and total_seconds_elapsed >= 604800:
+                interval_elapsed = True
+            elif logic.amount_rate == 'month' and total_seconds_elapsed >= 2592000:
+                interval_elapsed = True
+
+            if interval_elapsed:
+                amount_to_deduct = Decimal(logic.amount_to_charge)
+                logger.debug(f"Charging user {user.username} for location {location.location_name}: amount_to_charge={amount_to_deduct}")
+                original_balance = user.balance
+                user.balance -= amount_to_deduct
+                user.last_check_in = current_datetime
+                user.save()
+                logger.debug(f"Original balance: {original_balance}, amount: {amount_to_deduct}, new balance: {user.balance}")
+
+                transaction = TransactionHistory.objects.create(
+                    user=user,
+                    location=location,
+                    amount=amount_to_deduct,
+                    amount_rate=logic.amount_rate
+                )
+                transaction_serializer = TransactionHistorySerializer(transaction)
+                location_serializer = LocationSerializer(location)
+                response_data = {
+                    'transaction': transaction_serializer.data,
+                    'location': location_serializer.data,
+                    'charging_logic': {
+                        'amount_to_charge': logic.amount_to_charge,
+                        'amount_rate': logic.amount_rate
+                    }
+                }
+                charge_applied = True
+                return Response(response_data, status=status.HTTP_200_OK)
 
         if not charge_applied:
-            return JsonResponse({'balance': user.balance}, status=200)
+            return Response({'balance': user.balance}, status=status.HTTP_200_OK)
 
     except Exception as e:
         logger.error(f"Error during check and charge user: {str(e)}")
-        return JsonResponse({'error': str(e)}, status=400)
-
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 @api_view(['POST'])

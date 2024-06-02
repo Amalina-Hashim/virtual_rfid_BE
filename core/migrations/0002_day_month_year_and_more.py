@@ -31,23 +31,19 @@ class Migration(migrations.Migration):
                 ('year', models.IntegerField()),
             ],
         ),
-        migrations.RemoveField(
-            model_name='charginglogic',
-            name='rule_application_period',
-        ),
         migrations.AddField(
             model_name='charginglogic',
             name='days',
-            field=models.ManyToManyField(to='core.day'),
+            field=models.ManyToManyField(to='core.Day'),
         ),
         migrations.AddField(
             model_name='charginglogic',
             name='months',
-            field=models.ManyToManyField(to='core.month'),
+            field=models.ManyToManyField(to='core.Month'),
         ),
         migrations.AddField(
             model_name='charginglogic',
             name='years',
-            field=models.ManyToManyField(to='core.year'),
+            field=models.ManyToManyField(to='core.Year'),
         ),
     ]

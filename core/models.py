@@ -1,6 +1,7 @@
 import logging
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.utils import timezone
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -8,15 +9,17 @@ logger = logging.getLogger(__name__)
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
-    first_login = models.BooleanField(default=True)  
+    first_login = models.BooleanField(default=True)
     ROLE_CHOICES = (
         ('admin', 'Admin'),
         ('user', 'User'),
     )
     role = models.CharField(max_length=5, choices=ROLE_CHOICES, default='user')
+    last_check_in = models.DateTimeField(default=timezone.now) 
 
     def __str__(self):
         return self.username
+
 
 class Location(models.Model):
     country = models.CharField(max_length=100)
@@ -58,6 +61,7 @@ class ChargingLogic(models.Model):
     months = models.ManyToManyField(Month)
     years = models.ManyToManyField(Year)
     is_enabled = models.BooleanField(default=True)
+    rule_application_period = models.CharField(max_length=255, null=True, blank=True)  
 
     def is_applicable(self, date_time):
         if not self.is_enabled:
@@ -68,6 +72,7 @@ class ChargingLogic(models.Model):
             date_time.year in [year.year for year in self.years.all()] and
             self.start_time <= date_time.time() <= self.end_time
         )
+
 
 class TransactionHistory(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
