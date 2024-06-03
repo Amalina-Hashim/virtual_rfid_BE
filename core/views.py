@@ -23,6 +23,21 @@ from shapely.geometry import Point, Polygon
 
 logger = logging.getLogger(__name__)
 
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371000  # Earth radius in meters
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return R * c  # Distance in meters
+
+def is_point_in_polygon(lat, lon, polygon_points):
+    point = Point(lon, lat)
+    polygon = Polygon([(lng, lat) for lat, lng in polygon_points])
+    logger.debug(f"Point: {point}, Polygon: {polygon}")
+    is_within = polygon.contains(point)
+    logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
+    return is_within
 
 class UserCreateView(generics.CreateAPIView):
     queryset = User.objects.all()
@@ -191,66 +206,72 @@ def get_balance(request):
         logger.error(f"Error fetching balance: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-def haversine(lat1, lon1, lat2, lon2):
-    R = 6371.0  # Earth radius in kilometers
-    dlat = radians(lat2 - lat1)
-    dlon = radians(lon2 - lon1)
-    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
-    c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return R * c  # Distance in kilometers
-
-def is_point_in_polygon(lat, lon, polygon_points):
-    num = len(polygon_points)
-    j = num - 1
-    inside = False
-
-    for i in range(num):
-        xi, yi = polygon_points[i]
-        xj, yj = polygon_points[j]
-        if ((yi > lat) != (yj > lat)) and (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi):
-            inside = not inside
-        j = i
-
-    return inside
-
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def get_charging_logic_by_location(request):
     try:
-        latitude = float(request.data.get('latitude'))
-        longitude = float(request.data.get('longitude'))
+        data = request.data
+        latitude = data.get('latitude')
+        longitude = data.get('longitude')
+        timestamp = data.get('timestamp')
 
-        singapore_tz = pytz.timezone('Asia/Singapore')
-        current_time = timezone.localtime(timezone.now(), singapore_tz).time()
+        if latitude is None or longitude is None or timestamp is None:
+            return Response({'error': 'Invalid data: latitude, longitude, and timestamp are required.'}, status=status.HTTP_400_BAD_REQUEST)
 
-        logger.debug(f"Received coordinates: latitude={latitude}, longitude={longitude}, current_time={current_time}")
+        try:
+            latitude = float(latitude)
+            longitude = float(longitude)
+            parsed_timestamp = parse_datetime(timestamp)
+            if parsed_timestamp is None:
+                raise ValueError("Invalid ISO format string")
+        except (ValueError, TypeError) as e:
+            return Response({"error": "Invalid input"}, status=status.HTTP_400_BAD_REQUEST)
+
+        current_datetime = timezone.localtime(parsed_timestamp)
+        current_time = current_datetime.time()
 
         charging_logics = ChargingLogic.objects.filter(
-            Q(start_time__lte=current_time) &
-            Q(end_time__gte=current_time)
+            Q(is_enabled=True) &
+            (
+                Q(start_time__lte=current_time, end_time__gte=current_time) |
+                Q(start_time__lte=current_time, end_time__lte=F('start_time')) |
+                Q(start_time__gte=F('end_time'), end_time__gte=current_time)
+            )
         )
-
-        logger.debug(f"Number of charging logics found: {charging_logics.count()}")
 
         for logic in charging_logics:
             location = logic.location
-            if location.latitude is not None and location.longitude is not None:
-                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
-                logger.debug(f"Calculated distance to location {location.location_name}: {distance} km, Radius: {location.radius} km")
+            within_geofence = False
 
-                if distance <= float(location.radius):
-                    serializer = ChargingLogicSerializer(logic)
-                    return Response(serializer.data, status=status.HTTP_200_OK)
-            
             if location.polygon_points:
-                if is_point_in_polygon(latitude, longitude, location.polygon_points):
-                    serializer = ChargingLogicSerializer(logic)
-                    return Response(serializer.data, status=status.HTTP_200_OK)
+                points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
+                logger.debug(f"Checking point ({latitude}, {longitude}) within polygon: {points}")
+                if is_point_in_polygon(latitude, longitude, points):
+                    logger.debug(f"Point ({latitude}, {longitude}) is within the polygon.")
+                    within_geofence = True
+                else:
+                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the polygon.")
+
+            if location.latitude is not None and location.longitude is not None and location.radius is not None:
+                radius = float(location.radius)
+                distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
+                logger.debug(f"Calculated distance to location {location.location_name}: {distance:.2f} meters, Radius: {radius:.2f} meters")
+                if distance <= radius:
+                    logger.debug(f"Point ({latitude}, {longitude}) is within the radius of {radius} meters.")
+                    within_geofence = True
+                else:
+                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the radius of {radius} meters.")
+
+            if within_geofence:
+                serializer = ChargingLogicSerializer(logic)
+                return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response({'error': 'No charging logic found for the given location'}, status=status.HTTP_404_NOT_FOUND)
+
     except Exception as e:
         logger.error(f"Error: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -268,21 +289,21 @@ def create_transaction(request):
     logger.debug(f"Serializer errors: {serializer.errors}")
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-def haversine(lat1, lon1, lat2, lon2):
-    R = 6371000  # Earth radius in meters
-    dlat = math.radians(lat2 - lat1)
-    dlon = math.radians(lon2 - lon1)
-    a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    return R * c  # Distance in meters
+# def haversine(lat1, lon1, lat2, lon2):
+#     R = 6371000  # Earth radius in meters
+#     dlat = math.radians(lat2 - lat1)
+#     dlon = math.radians(lon2 - lon1)
+#     a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
+#     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+#     return R * c  # Distance in meters
 
-def is_point_in_polygon(lat, lon, polygon_points):
-    point = Point(lon, lat)  
-    polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  
-    logger.debug(f"Point: {point}, Polygon: {polygon}")
-    is_within = polygon.contains(point)
-    logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
-    return is_within
+# def is_point_in_polygon(lat, lon, polygon_points):
+#     point = Point(lon, lat)  
+#     polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  
+#     logger.debug(f"Point: {point}, Polygon: {polygon}")
+#     is_within = polygon.contains(point)
+#     logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
+#     return is_within
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
