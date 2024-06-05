@@ -360,25 +360,16 @@ def check_and_charge_user(request):
 
             if location.polygon_points:
                 points = [(float(point['lat']), float(point['lng'])) for point in location.polygon_points]
-                logger.debug(f"Checking point ({latitude}, {longitude}) within polygon: {points}")
                 if is_point_in_polygon(latitude, longitude, points):
-                    logger.debug(f"Point ({latitude}, {longitude}) is within the polygon.")
                     within_geofence = True
-                else:
-                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the polygon.")
 
             if location.latitude is not None and location.longitude is not None and location.radius is not None:
-                radius = float(location.radius) 
+                radius = float(location.radius)
                 distance = haversine(latitude, longitude, float(location.latitude), float(location.longitude))
-                logger.debug(f"Calculated distance to location {location.location_name}: {distance:.2f} meters, Radius: {radius:.2f} meters")
                 if distance <= radius:
-                    logger.debug(f"Point ({latitude}, {longitude}) is within the radius of {radius} meters.")
                     within_geofence = True
-                else:
-                    logger.debug(f"Point ({latitude}, {longitude}) is NOT within the radius of {radius} meters.")
 
             if not within_geofence:
-                logger.debug(f"User not within geofence for location: {location.location_name}")
                 continue
 
             if user.last_check_in is None:
@@ -405,12 +396,10 @@ def check_and_charge_user(request):
 
             if interval_elapsed:
                 amount_to_deduct = Decimal(logic.amount_to_charge)
-                logger.debug(f"Charging user {user.username} for location {location.location_name}: amount_to_charge={amount_to_deduct}")
                 original_balance = user.balance
                 user.balance -= amount_to_deduct
                 user.last_check_in = current_datetime
                 user.save()
-                logger.debug(f"Original balance: {original_balance}, amount: {amount_to_deduct}, new balance: {user.balance}")
 
                 transaction = TransactionHistory.objects.create(
                     user=user,
@@ -430,14 +419,16 @@ def check_and_charge_user(request):
                     'balance': user.balance
                 }
                 charge_applied = True
-                return Response(response_data, status=status.HTTP_200_OK)
+                break  # Exit the loop after the first applicable charge
 
         if not charge_applied:
             return Response({'balance': user.balance}, status=status.HTTP_200_OK)
 
+        return Response(response_data, status=status.HTTP_200_OK)
+
     except Exception as e:
-        logger.error(f"Error during check and charge user: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
