@@ -342,6 +342,7 @@ def check_and_charge_user(request):
         )
 
         user = request.user
+        original_balance = user.balance  # Capture the original balance
         charge_applied = False
 
         for logic in charging_logics:
@@ -396,7 +397,6 @@ def check_and_charge_user(request):
 
             if interval_elapsed:
                 amount_to_deduct = Decimal(logic.amount_to_charge)
-                original_balance = user.balance
                 user.balance -= amount_to_deduct
                 user.last_check_in = current_datetime
                 user.save()
@@ -416,18 +416,20 @@ def check_and_charge_user(request):
                         'amount_to_charge': logic.amount_to_charge,
                         'amount_rate': logic.amount_rate
                     },
-                    'balance': user.balance
+                    'balance': user.balance,
+                    'original_balance': original_balance  
                 }
                 charge_applied = True
                 break  # Exit the loop after the first applicable charge
 
         if not charge_applied:
-            return Response({'balance': user.balance}, status=status.HTTP_200_OK)
+            return Response({'balance': user.balance, 'original_balance': original_balance}, status=status.HTTP_200_OK)  # Include original balance here as well
 
         return Response(response_data, status=status.HTTP_200_OK)
 
     except Exception as e:
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
