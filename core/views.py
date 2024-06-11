@@ -266,7 +266,7 @@ def get_charging_logic_by_location(request):
                 serializer = ChargingLogicSerializer(logic)
                 return Response(serializer.data, status=status.HTTP_200_OK)
 
-        return Response({'error': 'No charging logic found for the given location'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'message': 'No charging logic found for the given location'}, status=status.HTTP_200_OK)
 
     except Exception as e:
         logger.error(f"Error: {str(e)}")
@@ -289,22 +289,7 @@ def create_transaction(request):
     logger.debug(f"Serializer errors: {serializer.errors}")
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-# def haversine(lat1, lon1, lat2, lon2):
-#     R = 6371000  # Earth radius in meters
-#     dlat = math.radians(lat2 - lat1)
-#     dlon = math.radians(lon2 - lon1)
-#     a = math.sin(dlat / 2) ** 2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon / 2) ** 2
-#     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-#     return R * c  # Distance in meters
-
-# def is_point_in_polygon(lat, lon, polygon_points):
-#     point = Point(lon, lat)  
-#     polygon = Polygon([(lng, lat) for lat, lng in polygon_points])  
-#     logger.debug(f"Point: {point}, Polygon: {polygon}")
-#     is_within = polygon.contains(point)
-#     logger.debug(f"Point ({lat}, {lon}) is {'within' if is_within else 'NOT within'} the polygon.")
-#     return is_within
-
+###
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def check_and_charge_user(request):
@@ -423,7 +408,7 @@ def check_and_charge_user(request):
                 break  # Exit the loop after the first applicable charge
 
         if not charge_applied:
-            return Response({'balance': user.balance, 'original_balance': original_balance}, status=status.HTTP_200_OK)  # Include original balance here as well
+            return Response({'balance': user.balance, 'original_balance': original_balance}, status=status.HTTP_200_OK)  
 
         return Response(response_data, status=status.HTTP_200_OK)
 
