@@ -31,4 +31,5 @@ jobs:
             --image gcr.io/${{ secrets.GCP_PROJECT }}/django-app:${{ github.sha }} \
             --platform managed \
             --region ${{ secrets.GCP_REGION }} \
-            --allow-unauthenticated
+            --allow-unauthenticated \
+            --set-env-vars DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }},STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }},DEBUG=${{ secrets.DEBUG }}

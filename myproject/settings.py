@@ -6,7 +6,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dw2y&q1d7!a2ci%^lb^sqca1rwng*yvu+-#k@4!i_1mk(*t9g^'
+SECRET_KEY = config('DJANGO_SECRET_KEY')
 
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 
