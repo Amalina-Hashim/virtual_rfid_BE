@@ -16,7 +16,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'testserver',  
+    'testserver',
+    'django-app-kkoytosj3a-as.a.run.app',   
 ]
 
 # Application definition
