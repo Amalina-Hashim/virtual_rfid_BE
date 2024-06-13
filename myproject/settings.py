@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from decouple import config
+from decouple import config, Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,16 +11,10 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'testserver',
-    'django-app-kkoytosj3a-as.a.run.app',
-    'virtual-rfid-be-1.onrender.com'
-
-]
+# Using environment variables for flexibility and security
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1,testserver,virtual-rfid-be-1.onrender.com,django-app-kkoytosj3a-as.a.run.app', cast=Csv())
 
 # Application definition
 INSTALLED_APPS = [
@@ -69,13 +63,26 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
 
-# Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database configuration
+if os.getenv('GAE_ENV', '').startswith('standard'):
+    # Production environment on Google App Engine (Cloud Run)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': '/cloudsql/' + config('INSTANCE_CONNECTION_NAME'),
+        }
     }
-}
+else:
+    # Local development environment
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -117,7 +124,8 @@ REST_FRAMEWORK = {
 
 # CORS configuration
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    'http://localhost:3000',
+    'https://rfid-project-424315.web.app'
 ]
 
 CORS_ALLOW_METHODS = [
@@ -140,7 +148,7 @@ CORS_ALLOW_CREDENTIALS = True
 # Logging configuration
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
+    'disable_existing_loggers': True,
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
@@ -155,8 +163,5 @@ LOGGING = {
         'handlers': ['console', 'file'],
         'level': 'DEBUG',
     },
-
 }
-
-
 
