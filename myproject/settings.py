@@ -17,7 +17,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'testserver',
-    'django-app-kkoytosj3a-as.a.run.app',  # Add your deployed backend domain
+    'django-app-kkoytosj3a-as.a.run.app',  
 ]
 
 # Application definition
