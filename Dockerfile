@@ -8,7 +8,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     gcc \
     libpq-dev \
-    build-essential
+    build-essential \
+    && apt-get clean
 
 # Copy the requirements file into the container
 COPY requirements.txt /app/
