@@ -17,7 +17,9 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'testserver',
-    'django-app-kkoytosj3a-as.a.run.app',  
+    'django-app-kkoytosj3a-as.a.run.app',
+    'virtual-rfid-be-1.onrender.com'
+
 ]
 
 # Application definition
