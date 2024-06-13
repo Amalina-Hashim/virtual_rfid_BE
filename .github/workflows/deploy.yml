@@ -26,6 +26,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
+          gcloud auth configure-docker asia-southeast1-docker.pkg.dev
           docker build -t asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT }}/rfid-project-repo/django-app:${{ github.sha }} .
           docker push asia-southeast1-docker.pkg.dev/${{ secrets.GCP_PROJECT }}/rfid-project-repo/django-app:${{ github.sha }}
 
