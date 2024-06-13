@@ -17,7 +17,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'testserver',
-    'django-app-kkoytosj3a-as.a.run.app',   
+    'django-app-kkoytosj3a-as.a.run.app',  # Add your deployed backend domain
 ]
 
 # Application definition
@@ -37,10 +37,10 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = 'core.User'
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -111,7 +111,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-   
 }
 
 # CORS configuration
@@ -128,14 +127,13 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-CORS_ALLOW_CREDENTIALS = True
-
 CORS_ALLOW_HEADERS = [
     "authorization",
     "content-type",
     "x-requested-with",
 ]
 
+CORS_ALLOW_CREDENTIALS = True
 
 # Logging configuration
 LOGGING = {
