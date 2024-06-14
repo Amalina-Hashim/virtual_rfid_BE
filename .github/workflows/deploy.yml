@@ -37,4 +37,4 @@ jobs:
             --platform managed \
             --region asia-southeast1 \
             --allow-unauthenticated \
-            --set-env-vars DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }},STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }},DEBUG=${{ secrets.DEBUG }}
+            --set-env-vars DJANGO_SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}",STRIPE_SECRET_KEY="${{ secrets.STRIPE_SECRET_KEY }}",DEBUG=${{ secrets.DEBUG }}
