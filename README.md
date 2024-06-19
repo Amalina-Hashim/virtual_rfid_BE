@@ -61,4 +61,4 @@ This project uses mobile phone's GPS as virtual RFID devices and Google Maps API
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/Amalina-Hashim/virtual_rfid_BE.git
