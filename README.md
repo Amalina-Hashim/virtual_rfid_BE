@@ -55,8 +55,8 @@ This project uses mobile phone's GPS as virtual RFID devices and Google Maps API
   - `POST /api/make-payment/` - Make a payment
 
 ## Screenshots
-![Admin Panel Screenshot](screenshots/Admin_screenshot.png)
-![User App Screenshot](screenshots/User_screenshot.png)
+![Admin Panel Screenshot](screenshots/Admin_Screenshot.png)
+![User App Screenshot](screenshots/User_Screenshot.png)
 
 ## Setup Instructions
 1. Clone the repository:
